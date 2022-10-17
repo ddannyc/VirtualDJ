@@ -32,7 +32,7 @@ import { TranslationService } from 'src/app/services/translation.service';
 export class AppDeckComponent implements OnInit, AfterViewInit, OnDestroy {
   @Input()
   deckNumber: number;
-  @ViewChild('waveform')
+  @ViewChild('waveform', { static: true })
   waveform: ElementRef;
   private musicSubscription: Subscription;
   rotation = 0;

@@ -1037,7 +1037,7 @@ export const CUSTOM_TEXT_INPUT_CONTROL_VALUE_ACCESSOR: any &#x3D; {
 export class SliderControllerComponent implements OnInit, ControlValueAccessor, AfterContentInit {
   @Input()
   config: any;
-  @ViewChild(&#x27;sliderShell&#x27;)
+  @ViewChild(&#x27;sliderShell&#x27;, { static: true })
   shellView: ElementRef;
   shell: HTMLElement;
   slider: any;

@@ -1732,7 +1732,7 @@ import { TranslationService } from &#x27;src/app/services/translation.service&#x
 export class AppDeckComponent implements OnInit, AfterViewInit, OnDestroy {
   @Input()
   deckNumber: number;
-  @ViewChild(&#x27;waveform&#x27;)
+  @ViewChild(&#x27;waveform&#x27;, { static: true })
   waveform: ElementRef;
   private musicSubscription: Subscription;
   rotation &#x3D; 0;

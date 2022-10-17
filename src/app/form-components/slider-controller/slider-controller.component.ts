@@ -35,7 +35,7 @@ export const CUSTOM_TEXT_INPUT_CONTROL_VALUE_ACCESSOR: any = {
 export class SliderControllerComponent implements OnInit, ControlValueAccessor, AfterContentInit {
   @Input()
   config: any;
-  @ViewChild('sliderShell')
+  @ViewChild('sliderShell', { static: true })
   shellView: ElementRef;
   shell: HTMLElement;
   slider: any;

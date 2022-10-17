@@ -35,7 +35,7 @@ export class AppMusicListComponent implements OnDestroy {
   startY;
   @ViewChildren(AngularDraggableDirective)
   songs: any;
-  @ViewChild('container')
+  @ViewChild('container', { static: true })
   scrollable: ElementRef;
   offSet;
   index = -1;
