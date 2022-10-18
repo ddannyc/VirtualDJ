@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AppDeckComponent } from './app-deck.component';
 import { AppModule } from 'src/app/app.module';
@@ -11,11 +11,13 @@ describe('AppDeckComponent', () => {
   let hostElement: HTMLElement;
   let wavesurfer;
   let playerService: PlayerService;
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [AppModule]
-    }).compileComponents();
-  }));
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        imports: [AppModule]
+      }).compileComponents();
+    })
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(AppDeckComponent);

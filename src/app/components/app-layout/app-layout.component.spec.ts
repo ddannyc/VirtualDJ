@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppLayoutComponent } from './app-layout.component';
 import { AppModule } from 'src/app/app.module';
 import { By } from '@angular/platform-browser';
@@ -17,11 +17,13 @@ describe('AppLayoutComponent', () => {
   let wavesurfer1;
   let wavesurfer0;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [AppModule]
-    }).compileComponents();
-  }));
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        imports: [AppModule]
+      }).compileComponents();
+    })
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(AppLayoutComponent);

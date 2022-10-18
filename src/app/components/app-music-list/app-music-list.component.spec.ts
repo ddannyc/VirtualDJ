@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AppMusicListComponent } from './app-music-list.component';
 import { AppModule } from 'src/app/app.module';
@@ -8,11 +8,13 @@ describe('AppMusicListComponent', () => {
   let fixture: ComponentFixture<AppMusicListComponent>;
   let hostElement: HTMLElement;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [AppModule]
-    }).compileComponents();
-  }));
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        imports: [AppModule]
+      }).compileComponents();
+    })
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(AppMusicListComponent);
