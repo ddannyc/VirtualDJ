@@ -15,7 +15,6 @@ GNU General Public License for more details.
 along with Web Virtual DJ.If not, see < https://www.gnu.org/licenses/>.
 */
 
-@charset "UTF-8";
 .slider,
 .slidervertical {
   position: absolute;

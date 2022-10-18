@@ -86,13 +86,13 @@
                 {{pitch}}%
               </div>
               <div class="layout-pitch-slider">
-                <slider-controller [config]="{id:'pitch_deck_'+deckNumber,
+                <app-slider-controller [config]="{id:'pitch_deck_'+deckNumber,
                               min:-25,
                               max:25,
                               vertical:true,
                               thumb:'sliderthumb-pitch-vertical',
                               track:'slidertrack-pitch-vertical'}" [(ngModel)]="pitch" (ngModelChange)="changePitch()">
-                </slider-controller>
+                </app-slider-controller>
               </div>
               <div class="layout-pitch-reset">
                 <img (dragstart)="$event.preventDefault()" draggable="false" class="icon" src="assets/images/reset.png"
