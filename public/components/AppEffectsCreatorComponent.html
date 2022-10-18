@@ -8,7 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-	      <link rel="stylesheet" href="../styles/style.css">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
     </head>
     <body>
 
@@ -18,10 +19,7 @@
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-                <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search">
-</div>
-            <compodoc-menu></compodoc-menu>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
@@ -38,7 +36,9 @@
 
 <ol class="breadcrumb">
   <li>Components</li>
-  <li>AppEffectsCreatorComponent</li>
+  <li
+  >
+  AppEffectsCreatorComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -50,6 +50,9 @@
         </li>
         <li >
             <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
         </li>
 </ul>
 
@@ -63,17 +66,18 @@
 
 
 
+
     <p class="comment">
         <h3>Implements</h3>
     </p>
     <p class="comment">
-                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
     </p>
 
 
 <section>
     <h3>Metadata</h3>
-    <table class="table table-sm table-hover">
+    <table class="table table-sm table-hover metadata">
         <tbody>
 
 
@@ -93,7 +97,7 @@
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>app-effects-creator.component.css</code></td>
+                <td class="col-md-9"><code>./app-effects-creator.component.css</code></td>
             </tr>
 
 
@@ -102,6 +106,12 @@
                 <td class="col-md-3">templateUrl</td>
                 <td class="col-md-9"><code>./app-effects-creator.component.html</code></td>
             </tr>
+
+
+
+
+
+
 
 
         </tbody>
@@ -121,40 +131,40 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#config">config</a>
+                                <a href="#config" >config</a>
                             </li>
                             <li>
-                                <a href="#defaultStep">defaultStep</a>
+                                <a href="#defaultStep" >defaultStep</a>
                             </li>
                             <li>
-                                <a href="#effects">effects</a>
+                                <a href="#effects" >effects</a>
                             </li>
                             <li>
-                                <a href="#effectsCreatorArray">effectsCreatorArray</a>
+                                <a href="#effectsCreatorArray" >effectsCreatorArray</a>
                             </li>
                             <li>
-                                <a href="#effectStruct">effectStruct</a>
+                                <a href="#effectStruct" >effectStruct</a>
                             </li>
                             <li>
-                                <a href="#JSON">JSON</a>
+                                <a href="#JSON" >JSON</a>
                             </li>
                             <li>
-                                <a href="#name">name</a>
+                                <a href="#name" >name</a>
                             </li>
                             <li>
-                                <a href="#removableEffects">removableEffects</a>
+                                <a href="#removableEffects" >removableEffects</a>
                             </li>
                             <li>
-                                <a href="#selectedEffect">selectedEffect</a>
+                                <a href="#selectedEffect" >selectedEffect</a>
                             </li>
                             <li>
-                                <a href="#selectedEffectRemove">selectedEffectRemove</a>
+                                <a href="#selectedEffectRemove" >selectedEffectRemove</a>
                             </li>
                             <li>
-                                <a href="#selectedEffects">selectedEffects</a>
+                                <a href="#selectedEffects" >selectedEffects</a>
                             </li>
                             <li>
-                                <a href="#validName">validName</a>
+                                <a href="#validName" >validName</a>
                             </li>
                         </ul>
                     </td>
@@ -169,28 +179,28 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#checkName">checkName</a>
+                                <a href="#checkName" >checkName</a>
                             </li>
                             <li>
-                                <a href="#createEffect">createEffect</a>
+                                <a href="#createEffect" >createEffect</a>
                             </li>
                             <li>
-                                <a href="#isDefined">isDefined</a>
+                                <a href="#isDefined" >isDefined</a>
                             </li>
                             <li>
-                                <a href="#removeEffect">removeEffect</a>
+                                <a href="#removeEffect" >removeEffect</a>
                             </li>
                             <li>
-                                <a href="#reset">reset</a>
+                                <a href="#reset" >reset</a>
                             </li>
                             <li>
-                                <a href="#resetRemove">resetRemove</a>
+                                <a href="#resetRemove" >resetRemove</a>
                             </li>
                             <li>
-                                <a href="#updateEffect">updateEffect</a>
+                                <a href="#updateEffect" >updateEffect</a>
                             </li>
                             <li>
-                                <a href="#updateRemovableEffects">updateRemovableEffects</a>
+                                <a href="#updateRemovableEffects" >updateRemovableEffects</a>
                             </li>
                         </ul>
                     </td>
@@ -210,7 +220,7 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(effectServ: <a href="../injectables/EffectsService.html">EffectsService</a>, builder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, playerServ: <a href="../injectables/PlayerService.html">PlayerService</a>)</code>
+<code>constructor(effectServ: <a href="../injectables/EffectsService.html" target="_self">EffectsService</a>, builder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, playerServ: <a href="../injectables/PlayerService.html" target="_self">PlayerService</a>)</code>
                     </td>
                 </tr>
                         <tr>
@@ -236,7 +246,7 @@
                                                         <td>effectServ</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/EffectsService.html" target="_self" >EffectsService</a></code>
+                                                                        <code><a href="../injectables/EffectsService.html" target="_self" >EffectsService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -248,7 +258,7 @@
                                                         <td>builder</td>
                                                   
                                                         <td>
-                                                                    <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -260,7 +270,7 @@
                                                         <td>playerServ</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/PlayerService.html" target="_self" >PlayerService</a></code>
+                                                                        <code><a href="../injectables/PlayerService.html" target="_self" >PlayerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -283,778 +293,675 @@
 
     <section>
     
-        <h3 id="methods">
-            Methods
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="checkName"></a>
-                        <span class="name">
-                            <b>
-                            checkName
-                            </b>
-                            <a href="#checkName"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkName"></a>
+                    <span class="name">
+                        <span ><b>checkName</b></span>
+                        <a href="#checkName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>checkName()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="105" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:105</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="105"
+                            class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:105</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="createEffect"></a>
-                        <span class="name">
-                            <b>
-                            createEffect
-                            </b>
-                            <a href="#createEffect"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createEffect"></a>
+                    <span class="name">
+                        <span ><b>createEffect</b></span>
+                        <a href="#createEffect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>createEffect()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="92" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:92</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:92</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="isDefined"></a>
-                        <span class="name">
-                            <b>
-                            isDefined
-                            </b>
-                            <a href="#isDefined"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-<code>isDefined(something: )</code>
-                    </td>
-                </tr>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isDefined"></a>
+                    <span class="name">
+                        <span ><b>isDefined</b></span>
+                        <a href="#isDefined"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isDefined(something)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:89</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:89</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>something</td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>something</td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="removeEffect"></a>
-                        <span class="name">
-                            <b>
-                            removeEffect
-                            </b>
-                            <a href="#removeEffect"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeEffect"></a>
+                    <span class="name">
+                        <span ><b>removeEffect</b></span>
+                        <a href="#removeEffect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>removeEffect()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="124" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:124</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="124"
+                            class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:124</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="reset"></a>
-                        <span class="name">
-                            <b>
-                            reset
-                            </b>
-                            <a href="#reset"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reset"></a>
+                    <span class="name">
+                        <span ><b>reset</b></span>
+                        <a href="#reset"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>reset()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:81</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:81</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="resetRemove"></a>
-                        <span class="name">
-                            <b>
-                            resetRemove
-                            </b>
-                            <a href="#resetRemove"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetRemove"></a>
+                    <span class="name">
+                        <span ><b>resetRemove</b></span>
+                        <a href="#resetRemove"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>resetRemove()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:85</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="85"
+                            class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:85</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="updateEffect"></a>
-                        <span class="name">
-                            <b>
-                            updateEffect
-                            </b>
-                            <a href="#updateEffect"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-<code>updateEffect(effect: )</code>
-                    </td>
-                </tr>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateEffect"></a>
+                    <span class="name">
+                        <span ><b>updateEffect</b></span>
+                        <a href="#updateEffect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateEffect(effect)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:57</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:57</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>effect</td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>effect</td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="updateRemovableEffects"></a>
-                        <span class="name">
-                            <b>
-                            updateRemovableEffects
-                            </b>
-                            <a href="#updateRemovableEffects"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateRemovableEffects"></a>
+                    <span class="name">
+                        <span ><b>updateRemovableEffects</b></span>
+                        <a href="#updateRemovableEffects"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>updateRemovableEffects()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:45</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:45</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
-
     <section>
     
-        <h3 id="inputs">
-            Properties
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="config"></a>
+                    <span class="name">
+                        <span ><b>config</b></span>
+                        <a href="#config"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="config"></a>
-                        <span class="name">
-                            <b>
-                            config
-                            </b>
-                            <a href="#config"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>config:     <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
-</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
 
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:35</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="defaultStep"></a>
-                        <span class="name">
-                            <b>
-                            defaultStep
-                            </b>
-                            <a href="#defaultStep"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>defaultStep:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:35</a></div>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Default value : </i><code>0.01</code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:38</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="defaultStep"></a>
+                    <span class="name">
+                        <span ><b>defaultStep</b></span>
+                        <a href="#defaultStep"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="effects"></a>
-                        <span class="name">
-                            <b>
-                            effects
-                            </b>
-                            <a href="#effects"><span class="icon ion-ios-link"></span></a>
-                        </span>
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
                     </td>
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                        <code>effects:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-</code>
+                        <i>Default value : </i><code>0.01</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:38</a></div>
                         </td>
                     </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:30</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="effects"></a>
+                    <span class="name">
+                        <span ><b>effects</b></span>
+                        <a href="#effects"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="effectsCreatorArray"></a>
-                        <span class="name">
-                            <b>
-                            effectsCreatorArray
-                            </b>
-                            <a href="#effectsCreatorArray"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>effectsCreatorArray:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-</code>
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:30</a></div>
                         </td>
                     </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:29</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="effectsCreatorArray"></a>
+                    <span class="name">
+                        <span ><b>effectsCreatorArray</b></span>
+                        <a href="#effectsCreatorArray"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="effectStruct"></a>
-                        <span class="name">
-                            <b>
-                            effectStruct
-                            </b>
-                            <a href="#effectStruct"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>effectStruct:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-</code>
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:29</a></div>
                         </td>
                     </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:33</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="effectStruct"></a>
+                    <span class="name">
+                        <span ><b>effectStruct</b></span>
+                        <a href="#effectStruct"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="JSON"></a>
-                        <span class="name">
-                            <b>
-                            JSON
-                            </b>
-                            <a href="#JSON"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>JSON:     <code></code>
-</code>
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>JSON</code>
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:33</a></div>
                         </td>
                     </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:34</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="JSON"></a>
+                    <span class="name">
+                        <span ><b>JSON</b></span>
+                        <a href="#JSON"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="name"></a>
-                        <span class="name">
-                            <b>
-                            name
-                            </b>
-                            <a href="#name"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>name:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-</code>
+                        <i>Default value : </i><code>JSON</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:34</a></div>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Default value : </i><code>&#x27;&#x27;</code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:36</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="name"></a>
+                    <span class="name">
+                        <span ><b>name</b></span>
+                        <a href="#name"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="removableEffects"></a>
-                        <span class="name">
-                            <b>
-                            removableEffects
-                            </b>
-                            <a href="#removableEffects"><span class="icon ion-ios-link"></span></a>
-                        </span>
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
                     </td>
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                        <code>removableEffects:     <code></code>
-</code>
-                    </td>
-                </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:40</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="selectedEffect"></a>
-                        <span class="name">
-                            <b>
-                            selectedEffect
-                            </b>
-                            <a href="#selectedEffect"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>selectedEffect:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-</code>
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:36</a></div>
                         </td>
                     </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:31</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removableEffects"></a>
+                    <span class="name">
+                        <span ><b>removableEffects</b></span>
+                        <a href="#removableEffects"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedEffect"></a>
+                    <span class="name">
+                        <span ><b>selectedEffect</b></span>
+                        <a href="#selectedEffect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="selectedEffectRemove"></a>
-                        <span class="name">
-                            <b>
-                            selectedEffectRemove
-                            </b>
-                            <a href="#selectedEffectRemove"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>selectedEffectRemove:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-</code>
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:31</a></div>
                         </td>
                     </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:32</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedEffectRemove"></a>
+                    <span class="name">
+                        <span ><b>selectedEffectRemove</b></span>
+                        <a href="#selectedEffectRemove"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="selectedEffects"></a>
-                        <span class="name">
-                            <b>
-                            selectedEffects
-                            </b>
-                            <a href="#selectedEffects"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>selectedEffects:     <code></code>
-</code>
-                    </td>
-                </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:39</a></div>
-                            </td>
-                        </tr>
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
 
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="validName"></a>
-                        <span class="name">
-                            <b>
-                            validName
-                            </b>
-                            <a href="#validName"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>validName:     <code></code>
-</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>false</code>
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:32</a></div>
                         </td>
                     </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:37</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedEffects"></a>
+                    <span class="name">
+                        <span ><b>selectedEffects</b></span>
+                        <a href="#selectedEffects"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="validName"></a>
+                    <span class="name">
+                        <span ><b>validName</b></span>
+                        <a href="#validName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/components/app-effects-creator/app-effects-creator.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
 </section>
 
 </div>
@@ -1273,6 +1180,75 @@ function decimalAdjust(type, value, exp) {
 &lt;/div&gt;</code></pre>
     </div>
 
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./app-effects-creator.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">/**
+  This file is part of Web Virtual DJ.
+
+Web Virtual DJ is free software: you can redistribute it and / or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+Web Virtual DJ is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+along with Web Virtual DJ.If not, see &lt; https://www.gnu.org/licenses/&gt;.
+*/
+
+.settings-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.effects-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.question-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.effect {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.question-label {
+  margin: 0px 5px 5px 0px;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+}
+
+td select {
+  width: 95%;
+}
+</code></pre>
+    </div>
+
 
     
 </div>
@@ -1282,8 +1258,8 @@ function decimalAdjust(type, value, exp) {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><!--     This file is part of Web Virtual DJ.    Web Virtual DJ is free software: you can redistribute it and/or modify    it under the terms of the GNU General Public License as published by    the Free Software Foundation, either version 3 of the License, or    (at your option) any later version.    Web Virtual DJ is distributed in the hope that it will be useful,    but WITHOUT ANY WARRANTY; without even the implied warranty of    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the    GNU General Public License for more details.    You should have received a copy of the GNU General Public License    along with Web Virtual DJ.  If not, see <https://www.gnu.org/licenses/>.--><div class="settings-container" id="app_effects_creator">  <div class="question-container">    <div class="question">      <div class="question-label">{{ \'EFFCREATOR.CREATE\' | translate }}</div>      <select [(ngModel)]="selectedEffect" (ngModelChange)="updateEffect($event)">        <option *ngFor="let effect of effectsCreatorArray" [value]="JSON.stringify(effect)"          title="{{effect.description}}">{{effect.name}}</option>      </select>    </div>  </div>  <div *ngIf="effectStruct">    <div class="question">      <div class="question-label">{{effectStruct.name}}</div>      {{effectStruct.description}}    </div>    <div class="question" style="width:250px">      <p style="margin: 0px 5px 5px 0px;">{{ \'EFFCREATOR.NAME\' | translate }}</p>      <input type="text" [(ngModel)]="name" (ngModelChange)="checkName()"        [title]="\'At least \'+ nameChars+\' characters\'">    </div>    <div class="question">      <div class="question-label">{{ \'EFFCREATOR.CONFIG\' | translate }}</div>    </div>    <div class="question">      <table [formGroup]="config">        <tr *ngFor="let config of effectStruct.configs;let j=index" style="height:40px;">          <td            [attr.title]="isDefined(config.min)?\'A value between \'+config.min+\' and \'+config.max+\' in steps of \'+(config.step?config.step:defaultStep):null">            {{config.name}}:</td>          <td>            <input *ngIf="isDefined(config.min)" style="width: 100%" type="number" [formControlName]="config.name"              [min]="config.min" [max]="config.max" [step]="config.step?config.step:defaultStep"              [attr.title]="\'A value between \'+config.min+\' and \'+config.max+\' in steps of \'+(config.step?config.step:defaultStep)">            <select *ngIf="isDefined(config.values)" [formControlName]="config.name">              <option *ngFor="let value of config.values" [value]="value">{{value}}</option>            </select>            <div *ngIf="isDefined(config.value)">{{config.value}}</div>          </td>        </tr>      </table>    </div>    <button (click)="createEffect()" [disabled]="!validName || !config.valid">{{ \'EFFCREATOR.CREATEBUTTON\' | translate      }}</button>  </div>  <div class="question">    <div class="question-label">{{ \'EFFCREATOR.REMOVE\' | translate }}</div>    <div *ngIf="!(effects.length>6 && removableEffects.length)">{{ \'EFFCREATOR.TOREMOVE\' | translate }}</div>    <select *ngIf="effects.length>6 && removableEffects.length" [(ngModel)]="selectedEffectRemove" style="width:250px">      <option *ngFor="let effect of removableEffects" [value]="effect.id">{{effect.name}}</option>    </select>    <button *ngIf="effects.length>6" style="width:250px" (click)="removeEffect()" [disabled]="">{{      \'EFFCREATOR.REMOVEBUTTON\' | translate }}</button>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppAboutComponent', 'selector': 'app-about'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppDeckComponent', 'selector': 'app-deck'},{'name': 'AppEffectsCreatorComponent', 'selector': 'app-effects-creator'},{'name': 'AppEffectsSelectorComponent', 'selector': 'app-effects-selector'},{'name': 'AppHelpComponent', 'selector': 'app-help'},{'name': 'AppLayoutComponent', 'selector': 'app-layout'},{'name': 'AppMusicListComponent', 'selector': 'app-music-list'},{'name': 'AppSettingsComponent', 'selector': 'app-settings'},{'name': 'AppTabsComponent', 'selector': 'app-tabs'},{'name': 'AppVolumeComponent', 'selector': 'app-volume'},{'name': 'RouletteControllerComponent', 'selector': 'roulette-controller'},{'name': 'SliderControllerComponent', 'selector': 'slider-controller'}];
-    var DIRECTIVES = [{'name': 'AngularDraggableDirective', 'selector': '[ngDraggable]'}];
+    var COMPONENTS = [{'name': 'AppAboutComponent', 'selector': 'app-about'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppDeckComponent', 'selector': 'app-deck'},{'name': 'AppEffectsCreatorComponent', 'selector': 'app-effects-creator'},{'name': 'AppEffectsSelectorComponent', 'selector': 'app-effects-selector'},{'name': 'AppHelpComponent', 'selector': 'app-help'},{'name': 'AppLayoutComponent', 'selector': 'app-layout'},{'name': 'AppMusicListComponent', 'selector': 'app-music-list'},{'name': 'AppSettingsComponent', 'selector': 'app-settings'},{'name': 'AppTabsComponent', 'selector': 'app-tabs'},{'name': 'AppVolumeComponent', 'selector': 'app-volume'},{'name': 'RouletteControllerComponent', 'selector': 'app-roulette-controller'},{'name': 'SliderControllerComponent', 'selector': 'app-slider-controller'}];
+    var DIRECTIVES = [{'name': 'AngularDraggableDirective', 'selector': '[appNgDraggable]'}];
     var ACTUAL_COMPONENT = {'name': 'AppEffectsCreatorComponent'};
 </script>
 <script src="../js/tree.js"></script>
@@ -1301,9 +1277,12 @@ function decimalAdjust(type, value, exp) {
 
 
 
+
+
+
                    </div><div class="search-results">
     <div class="has-results">
-        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
         <ul class="search-results-list"></ul>
     </div>
     <div class="no-results">
@@ -1315,15 +1294,27 @@ function decimalAdjust(type, value, exp) {
            </div>
        </div>
 
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'AppEffectsCreatorComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>
        <script src="../js/libs/lit-html.js"></script>
-       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
 
        <script src="../js/libs/bootstrap-native.js"></script>
 

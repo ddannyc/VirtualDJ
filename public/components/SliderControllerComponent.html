@@ -8,7 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-	      <link rel="stylesheet" href="../styles/style.css">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
     </head>
     <body>
 
@@ -18,10 +19,7 @@
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-                <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search">
-</div>
-            <compodoc-menu></compodoc-menu>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
@@ -38,7 +36,9 @@
 
 <ol class="breadcrumb">
   <li>Components</li>
-  <li>SliderControllerComponent</li>
+  <li
+  >
+  SliderControllerComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -50,6 +50,9 @@
         </li>
         <li >
             <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
         </li>
 </ul>
 
@@ -63,19 +66,20 @@
 
 
 
+
     <p class="comment">
         <h3>Implements</h3>
     </p>
     <p class="comment">
-                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
-                <code><a href="https://angular.io/api/forms/ControlValueAccessor" target="_blank" >ControlValueAccessor</a></code>
-                <code><a href="https://angular.io/api/core/AfterContentInit" target="_blank" >AfterContentInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/forms/ControlValueAccessor" target="_blank" >ControlValueAccessor</a></code>
+                    <code><a href="https://angular.io/api/core/AfterContentInit" target="_blank" >AfterContentInit</a></code>
     </p>
 
 
 <section>
     <h3>Metadata</h3>
-    <table class="table table-sm table-hover">
+    <table class="table table-sm table-hover metadata">
         <tbody>
 
 
@@ -96,12 +100,12 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>slider-controller</code></td>
+                <td class="col-md-9"><code>app-slider-controller</code></td>
             </tr>
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>slider-controller.component.css</code></td>
+                <td class="col-md-9"><code>./slider-controller.component.css</code></td>
             </tr>
 
 
@@ -110,6 +114,12 @@
                 <td class="col-md-3">templateUrl</td>
                 <td class="col-md-9"><code>./slider-controller.component.html</code></td>
             </tr>
+
+
+
+
+
+
 
 
         </tbody>
@@ -129,22 +139,22 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#contentInit">contentInit</a>
+                                <a href="#contentInit" >contentInit</a>
                             </li>
                             <li>
-                                <a href="#fillsize">fillsize</a>
+                                <a href="#fillsize" >fillsize</a>
                             </li>
                             <li>
-                                <a href="#shell">shell</a>
+                                <a href="#shell" >shell</a>
                             </li>
                             <li>
-                                <a href="#shellView">shellView</a>
+                                <a href="#shellView" >shellView</a>
                             </li>
                             <li>
-                                <a href="#slider">slider</a>
+                                <a href="#slider" >slider</a>
                             </li>
                             <li>
-                                <a href="#zindex">zindex</a>
+                                <a href="#zindex" >zindex</a>
                             </li>
                         </ul>
                     </td>
@@ -159,16 +169,16 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#registerOnChange">registerOnChange</a>
+                                <a href="#registerOnChange" >registerOnChange</a>
                             </li>
                             <li>
-                                <a href="#registerOnTouched">registerOnTouched</a>
+                                <a href="#registerOnTouched" >registerOnTouched</a>
                             </li>
                             <li>
-                                <a href="#setValue">setValue</a>
+                                <a href="#setValue" >setValue</a>
                             </li>
                             <li>
-                                <a href="#writeValue">writeValue</a>
+                                <a href="#writeValue" >writeValue</a>
                             </li>
                         </ul>
                     </td>
@@ -183,7 +193,7 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#config">config</a>
+                                <a href="#config" >config</a>
                             </li>
                         </ul>
                     </td>
@@ -201,40 +211,40 @@
                         <td class="col-md-4">
                             <ul class="index-list">
                                 <li>
-                                    <a href="#thumbWidth">thumbWidth</a>
+                                    <a href="#thumbWidth" >thumbWidth</a>
                                 </li>
                                 <li>
-                                    <a href="#thumbHeight">thumbHeight</a>
+                                    <a href="#thumbHeight" >thumbHeight</a>
                                 </li>
                                 <li>
-                                    <a href="#thumbTop">thumbTop</a>
+                                    <a href="#thumbTop" >thumbTop</a>
                                 </li>
                                 <li>
-                                    <a href="#thumbLeft">thumbLeft</a>
+                                    <a href="#thumbLeft" >thumbLeft</a>
                                 </li>
                                 <li>
-                                    <a href="#fillWidth">fillWidth</a>
+                                    <a href="#fillWidth" >fillWidth</a>
                                 </li>
                                 <li>
-                                    <a href="#fillHeight">fillHeight</a>
+                                    <a href="#fillHeight" >fillHeight</a>
                                 </li>
                                 <li>
-                                    <a href="#fillTop">fillTop</a>
+                                    <a href="#fillTop" >fillTop</a>
                                 </li>
                                 <li>
-                                    <a href="#fillLeft">fillLeft</a>
+                                    <a href="#fillLeft" >fillLeft</a>
                                 </li>
                                 <li>
-                                    <a href="#trackWidth">trackWidth</a>
+                                    <a href="#trackWidth" >trackWidth</a>
                                 </li>
                                 <li>
-                                    <a href="#trackHeight">trackHeight</a>
+                                    <a href="#trackHeight" >trackHeight</a>
                                 </li>
                                 <li>
-                                    <a href="#trackTop">trackTop</a>
+                                    <a href="#trackTop" >trackTop</a>
                                 </li>
                                 <li>
-                                    <a href="#trackLeft">trackLeft</a>
+                                    <a href="#trackLeft" >trackLeft</a>
                                 </li>
                             </ul>
                         </td>
@@ -249,15 +259,15 @@
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="config"></a>
-                        <code>config</code>
+                        <b>config</b>
                     </td>
-                    <td class="col-md-10">
-                            <p>
-                            <em>Type :</em>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
-                            </p>
                     </td>
                 </tr>
                         <tr>
@@ -273,474 +283,428 @@
 
     <section>
     
-        <h3 id="methods">
-            Methods
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="registerOnChange"></a>
-                        <span class="name">
-                            <b>
-                            registerOnChange
-                            </b>
-                            <a href="#registerOnChange"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="registerOnChange"></a>
+                    <span class="name">
+                        <span ><b>registerOnChange</b></span>
+                        <a href="#registerOnChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>registerOnChange(fn: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="245" class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:245</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="245"
+                            class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:245</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>fn</td>
-                                                        <td>
-                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>fn</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="registerOnTouched"></a>
-                        <span class="name">
-                            <b>
-                            registerOnTouched
-                            </b>
-                            <a href="#registerOnTouched"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="registerOnTouched"></a>
+                    <span class="name">
+                        <span ><b>registerOnTouched</b></span>
+                        <a href="#registerOnTouched"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>registerOnTouched(fn: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="248" class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:248</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="248"
+                            class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:248</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>fn</td>
-                                                        <td>
-                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>fn</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="setValue"></a>
-                        <span class="name">
-                            <b>
-                            setValue
-                            </b>
-                            <a href="#setValue"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setValue"></a>
+                    <span class="name">
+                        <span ><b>setValue</b></span>
+                        <a href="#setValue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>setValue()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="235" class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:235</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="235"
+                            class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:235</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="writeValue"></a>
-                        <span class="name">
-                            <b>
-                            writeValue
-                            </b>
-                            <a href="#writeValue"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="writeValue"></a>
+                    <span class="name">
+                        <span ><b>writeValue</b></span>
+                        <a href="#writeValue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>writeValue(value: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="240" class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:240</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="240"
+                            class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:240</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>value</td>
-                                                        <td>
-                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
-
     <section>
     
-        <h3 id="inputs">
-            Properties
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="contentInit"></a>
-                        <span class="name">
-                            <b>
-                            contentInit
-                            </b>
-                            <a href="#contentInit"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>contentInit:     <code></code>
-</code>
-                    </td>
-                </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:44</a></div>
-                            </td>
-                        </tr>
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contentInit"></a>
+                    <span class="name">
+                        <span ><b>contentInit</b></span>
+                        <a href="#contentInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:44</a></div>
+                        </td>
+                    </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fillsize"></a>
+                    <span class="name">
+                        <span ><b>fillsize</b></span>
+                        <a href="#fillsize"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="fillsize"></a>
-                        <span class="name">
-                            <b>
-                            fillsize
-                            </b>
-                            <a href="#fillsize"><span class="icon ion-ios-link"></span></a>
-                        </span>
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
                     </td>
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                        <code>fillsize:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-</code>
+                        <i>Default value : </i><code>16</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:42</a></div>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Default value : </i><code>16</code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:42</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shell"></a>
+                    <span class="name">
+                        <span ><b>shell</b></span>
+                        <a href="#shell"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="shell"></a>
-                        <span class="name">
-                            <b>
-                            shell
-                            </b>
-                            <a href="#shell"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>shell:     <code>HTMLElement</code>
-</code>
+                        <i>Type : </i>    <code>HTMLElement</code>
+
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code>HTMLElement</code>
-
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:40</a></div>
                         </td>
                     </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:40</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shellView"></a>
+                    <span class="name">
+                        <span ><b>shellView</b></span>
+                        <a href="#shellView"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="shellView"></a>
-                        <span class="name">
-                            <b>
-                            shellView
-                            </b>
-                            <a href="#shellView"><span class="icon ion-ios-link"></span></a>
-                        </span>
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
                     </td>
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                        <code>shellView:     <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
-</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Decorators : </i><code>ViewChild</code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:39</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="slider"></a>
-                        <span class="name">
-                            <b>
-                            slider
-                            </b>
-                            <a href="#slider"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>slider:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-</code>
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;sliderShell&#x27;, {static: true})<br />
+                        </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:39</a></div>
                         </td>
                     </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:41</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="slider"></a>
+                    <span class="name">
+                        <span ><b>slider</b></span>
+                        <a href="#slider"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="zindex"></a>
-                        <span class="name">
-                            <b>
-                            zindex
-                            </b>
-                            <a href="#zindex"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>zindex:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-</code>
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:41</a></div>
                         </td>
                     </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="zindex"></a>
+                    <span class="name">
+                        <span ><b>zindex</b></span>
+                        <a href="#zindex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>0</code>
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:43</a></div>
                         </td>
                     </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/form-components/slider-controller/slider-controller.component.ts:43</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
+        </tbody>
+    </table>
 </section>
 
     <section>
@@ -1029,7 +993,7 @@ export const CUSTOM_TEXT_INPUT_CONTROL_VALUE_ACCESSOR: any &#x3D; {
 };
 
 @Component({
-  selector: &#x27;slider-controller&#x27;,
+  selector: &#x27;app-slider-controller&#x27;,
   templateUrl: &#x27;./slider-controller.component.html&#x27;,
   styleUrls: [&#x27;./slider-controller.component.css&#x27;],
   providers: [CUSTOM_TEXT_INPUT_CONTROL_VALUE_ACCESSOR]
@@ -1291,6 +1255,206 @@ export class SliderControllerComponent implements OnInit, ControlValueAccessor, 
 &lt;/div&gt;</code></pre>
     </div>
 
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./slider-controller.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">/**
+  This file is part of Web Virtual DJ.
+
+Web Virtual DJ is free software: you can redistribute it and / or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+Web Virtual DJ is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+along with Web Virtual DJ.If not, see &lt; https://www.gnu.org/licenses/&gt;.
+*/
+
+@charset &quot;UTF-8&quot;;
+.slider,
+.slidervertical {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+  z-index: 2;
+}
+
+.slidershell {
+  border: 0 none;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.sliderfill {
+  border-radius: 4px;
+  position: absolute;
+  pointer-events: none;
+  background: #00767f;
+  background: linear-gradient(90deg, #005555, #006699);
+  z-index: 2;
+}
+
+.sliderfill-vertical {
+  border-radius: 4px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  position: absolute;
+  pointer-events: none;
+  background: #00767f;
+  background: linear-gradient(90deg, #005555, #006699);
+  z-index: 2;
+}
+
+.slidertrack {
+  border-radius: 4px;
+  position: absolute;
+  pointer-events: none;
+  background: #888888;
+  z-index: 1;
+}
+
+.slidertrack-vertical {
+  border-radius: 4px;
+  position: absolute;
+  pointer-events: none;
+  background: #888888;
+  z-index: 1;
+}
+
+.sliderthumb {
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border: 0 none;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  pointer-events: none;
+  z-index: 3;
+  cursor: pointer;
+}
+
+input[type&#x3D;&#x27;range&#x27;]::-ms-track {
+  width: 100%;
+  height: 100%;
+  -webkit-appearance: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0 none;
+  background: transparent;
+  color: transparent;
+  overflow: visible;
+}
+
+input[type&#x3D;&#x27;range&#x27;]::-moz-range-track {
+  width: 100%;
+  height: 100%;
+  -moz-appearance: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0 none;
+  background: transparent;
+  color: transparent;
+  overflow: visible;
+}
+
+input[type&#x3D;&#x27;range&#x27;] {
+  width: 100%;
+  height: 100%;
+  -webkit-appearance: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0 none;
+  background: transparent;
+  color: transparent;
+  overflow: visible;
+  z-index: 4;
+}
+
+/* we need a separate rule for when the range input is to be vertical */
+
+input[type&#x3D;&#x27;range&#x27;].slidervertical {
+  -webkit-appearance: slider-vertical;
+  writing-mode: bt-lr;
+  opacity: 0.01;
+}
+
+input[type&#x3D;&#x27;range&#x27;]:focus::-webkit-slider-runnable-track {
+  background: transparent;
+  border: transparent;
+}
+
+input[type&#x3D;&#x27;range&#x27;]:focus {
+  outline: none;
+}
+
+input[type&#x3D;&#x27;range&#x27;]::-ms-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 0px;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type&#x3D;&#x27;range&#x27;]::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 0px;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type&#x3D;&#x27;range&#x27;]::-webkit-slider-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 0px;
+  border: 0 none;
+  background: transparent;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+input[type&#x3D;&#x27;range&#x27;]::-ms-fill-lower {
+  background: transparent;
+  border: 0 none;
+}
+
+input[type&#x3D;&#x27;range&#x27;]::-ms-fill-upper {
+  background: transparent;
+  border: 0 none;
+}
+
+input[type&#x3D;&#x27;range&#x27;]::-ms-tooltip {
+  display: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+</code></pre>
+    </div>
+
 
     
 </div>
@@ -1300,8 +1464,8 @@ export class SliderControllerComponent implements OnInit, ControlValueAccessor, 
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><!--     This file is part of Web Virtual DJ.    Web Virtual DJ is free software: you can redistribute it and/or modify    it under the terms of the GNU General Public License as published by    the Free Software Foundation, either version 3 of the License, or    (at your option) any later version.    Web Virtual DJ is distributed in the hope that it will be useful,    but WITHOUT ANY WARRANTY; without even the implied warranty of    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the    GNU General Public License for more details.    You should have received a copy of the GNU General Public License    along with Web Virtual DJ.  If not, see <https://www.gnu.org/licenses/>.--><div class="slidershell {{config.track}}" #sliderShell [id]="config.id+\'_slidershell\'">	<div *ngIf="config.fill" [ngClass]="{\'sliderfill\':!config.vertical,	 \'sliderfill-vertical\':config.vertical}" [id]="config.id+\'sliderfill\'" [style.width]="fillWidth+\'px\'"		[style.height]="fillHeight+\'px\'" [style.top]="fillTop+\'px\'" [style.left]="fillLeft+\'px\'"></div>	<div *ngIf="config.fill && contentInit" [ngClass]="{\'slidertrack\':!config.vertical,	 \'slidertrack-vertical\':config.vertical}" [id]="config.id+\'slidertrack\'" [style.width]="trackWidth+\'px\'"		[style.height]="trackHeight+\'px\'" [style.top]="trackTop+\'px\'" [style.left]="trackLeft+\'px\'"></div>	<div class="sliderthumb {{config.thumb}}" [id]="config.id+\'sliderthumb\'" [style.width]="thumbWidth+\'px\'"		[style.height]="thumbHeight+\'px\'" [style.top]="thumbTop+\'px\'" [style.left]="thumbLeft+\'px\'"></div>	<input [ngClass]="{\'slider\':!config.vertical,	 \'slidervertical\':config.vertical}" [id]="config.id+\'_input\'" type="range" min="{{config.min}}" max="{{config.max}}"		[(ngModel)]="slider" (ngModelChange)="setValue()" [attr.orient]="config.vertical?\'vertical\':null" /></div></div>'
-    var COMPONENTS = [{'name': 'AppAboutComponent', 'selector': 'app-about'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppDeckComponent', 'selector': 'app-deck'},{'name': 'AppEffectsCreatorComponent', 'selector': 'app-effects-creator'},{'name': 'AppEffectsSelectorComponent', 'selector': 'app-effects-selector'},{'name': 'AppHelpComponent', 'selector': 'app-help'},{'name': 'AppLayoutComponent', 'selector': 'app-layout'},{'name': 'AppMusicListComponent', 'selector': 'app-music-list'},{'name': 'AppSettingsComponent', 'selector': 'app-settings'},{'name': 'AppTabsComponent', 'selector': 'app-tabs'},{'name': 'AppVolumeComponent', 'selector': 'app-volume'},{'name': 'RouletteControllerComponent', 'selector': 'roulette-controller'},{'name': 'SliderControllerComponent', 'selector': 'slider-controller'}];
-    var DIRECTIVES = [{'name': 'AngularDraggableDirective', 'selector': '[ngDraggable]'}];
+    var COMPONENTS = [{'name': 'AppAboutComponent', 'selector': 'app-about'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppDeckComponent', 'selector': 'app-deck'},{'name': 'AppEffectsCreatorComponent', 'selector': 'app-effects-creator'},{'name': 'AppEffectsSelectorComponent', 'selector': 'app-effects-selector'},{'name': 'AppHelpComponent', 'selector': 'app-help'},{'name': 'AppLayoutComponent', 'selector': 'app-layout'},{'name': 'AppMusicListComponent', 'selector': 'app-music-list'},{'name': 'AppSettingsComponent', 'selector': 'app-settings'},{'name': 'AppTabsComponent', 'selector': 'app-tabs'},{'name': 'AppVolumeComponent', 'selector': 'app-volume'},{'name': 'RouletteControllerComponent', 'selector': 'app-roulette-controller'},{'name': 'SliderControllerComponent', 'selector': 'app-slider-controller'}];
+    var DIRECTIVES = [{'name': 'AngularDraggableDirective', 'selector': '[appNgDraggable]'}];
     var ACTUAL_COMPONENT = {'name': 'SliderControllerComponent'};
 </script>
 <script src="../js/tree.js"></script>
@@ -1319,9 +1483,12 @@ export class SliderControllerComponent implements OnInit, ControlValueAccessor, 
 
 
 
+
+
+
                    </div><div class="search-results">
     <div class="has-results">
-        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
         <ul class="search-results-list"></ul>
     </div>
     <div class="no-results">
@@ -1333,15 +1500,27 @@ export class SliderControllerComponent implements OnInit, ControlValueAccessor, 
            </div>
        </div>
 
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'SliderControllerComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>
        <script src="../js/libs/lit-html.js"></script>
-       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
 
        <script src="../js/libs/bootstrap-native.js"></script>
 

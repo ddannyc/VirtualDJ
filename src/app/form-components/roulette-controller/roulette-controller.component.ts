@@ -26,7 +26,7 @@ export const CUSTOM_TEXT_INPUT_CONTROL_VALUE_ACCESSOR: any = {
   multi: true
 };
 @Component({
-  selector: 'roulette-controller',
+  selector: 'app-roulette-controller',
   templateUrl: './roulette-controller.component.html',
   styleUrls: ['./roulette-controller.component.css'],
   providers: [CUSTOM_TEXT_INPUT_CONTROL_VALUE_ACCESSOR]

@@ -18,7 +18,7 @@ import { IPosition, Position } from './position';
 import { HelperBlock } from './helper-block';
 
 @Directive({
-  selector: '[ngDraggable]',
+  selector: '[appNgDraggable]',
   exportAs: 'ngDraggable'
 })
 export class AngularDraggableDirective implements OnInit, OnDestroy, OnChanges, AfterViewInit {

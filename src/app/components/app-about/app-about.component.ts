@@ -21,8 +21,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app-about.component.html',
   styleUrls: ['./app-about.component.css']
 })
-export class AppAboutComponent implements OnInit {
+export class AppAboutComponent {
   constructor() {}
-
-  ngOnInit() {}
 }

@@ -27,7 +27,7 @@ export const CUSTOM_TEXT_INPUT_CONTROL_VALUE_ACCESSOR: any = {
 };
 
 @Component({
-  selector: 'slider-controller',
+  selector: 'app-slider-controller',
   templateUrl: './slider-controller.component.html',
   styleUrls: ['./slider-controller.component.css'],
   providers: [CUSTOM_TEXT_INPUT_CONTROL_VALUE_ACCESSOR]

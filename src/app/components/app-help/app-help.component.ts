@@ -22,10 +22,9 @@ import { HelpService } from 'src/app/services/help.service';
   templateUrl: './app-help.component.html',
   styleUrls: ['./app-help.component.css']
 })
-export class AppHelpComponent implements OnInit {
+export class AppHelpComponent {
   constructor(private helpService: HelpService) {}
 
-  ngOnInit() {}
   help(helpquery) {
     this.helpService.save(helpquery);
     setTimeout(() => {

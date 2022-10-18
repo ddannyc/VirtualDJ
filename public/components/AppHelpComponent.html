@@ -8,7 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-	      <link rel="stylesheet" href="../styles/style.css">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
     </head>
     <body>
 
@@ -18,10 +19,7 @@
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-                <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search">
-</div>
-            <compodoc-menu></compodoc-menu>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
@@ -38,7 +36,9 @@
 
 <ol class="breadcrumb">
   <li>Components</li>
-  <li>AppHelpComponent</li>
+  <li
+  >
+  AppHelpComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -50,6 +50,9 @@
         </li>
         <li >
             <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
         </li>
 </ul>
 
@@ -63,17 +66,12 @@
 
 
 
-    <p class="comment">
-        <h3>Implements</h3>
-    </p>
-    <p class="comment">
-                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
-    </p>
+
 
 
 <section>
     <h3>Metadata</h3>
-    <table class="table table-sm table-hover">
+    <table class="table table-sm table-hover metadata">
         <tbody>
 
 
@@ -93,7 +91,7 @@
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>app-help.component.css</code></td>
+                <td class="col-md-9"><code>./app-help.component.css</code></td>
             </tr>
 
 
@@ -102,6 +100,12 @@
                 <td class="col-md-3">templateUrl</td>
                 <td class="col-md-9"><code>./app-help.component.html</code></td>
             </tr>
+
+
+
+
+
+
 
 
         </tbody>
@@ -122,7 +126,7 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#help">help</a>
+                                <a href="#help" >help</a>
                             </li>
                         </ul>
                     </td>
@@ -142,7 +146,7 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(helpService: <a href="../injectables/HelpService.html">HelpService</a>)</code>
+<code>constructor(helpService: <a href="../injectables/HelpService.html" target="_self">HelpService</a>)</code>
                     </td>
                 </tr>
                         <tr>
@@ -168,7 +172,7 @@
                                                         <td>helpService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/HelpService.html" target="_self" >HelpService</a></code>
+                                                                        <code><a href="../injectables/HelpService.html" target="_self" >HelpService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -191,76 +195,75 @@
 
     <section>
     
-        <h3 id="methods">
-            Methods
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="help"></a>
-                        <span class="name">
-                            <b>
-                            help
-                            </b>
-                            <a href="#help"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-<code>help(helpquery: )</code>
-                    </td>
-                </tr>
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="help"></a>
+                    <span class="name">
+                        <span ><b>help</b></span>
+                        <a href="#help"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>help(helpquery)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/components/app-help/app-help.component.ts:29</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="28"
+                            class="link-to-prism">src/app/components/app-help/app-help.component.ts:28</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>helpquery</td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>helpquery</td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
-
 
 </div>
 
@@ -274,10 +277,9 @@ import { HelpService } from &#x27;src/app/services/help.service&#x27;;
   templateUrl: &#x27;./app-help.component.html&#x27;,
   styleUrls: [&#x27;./app-help.component.css&#x27;]
 })
-export class AppHelpComponent implements OnInit {
+export class AppHelpComponent {
   constructor(private helpService: HelpService) {}
 
-  ngOnInit() {}
   help(helpquery) {
     this.helpService.save(helpquery);
     setTimeout(() &#x3D;&gt; {
@@ -347,6 +349,60 @@ export class AppHelpComponent implements OnInit {
 &lt;/div&gt;</code></pre>
     </div>
 
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./app-help.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">/**
+  This file is part of Web Virtual DJ.
+
+Web Virtual DJ is free software: you can redistribute it and / or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+Web Virtual DJ is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+along with Web Virtual DJ.If not, see &lt; https://www.gnu.org/licenses/&gt;.
+*/
+
+.help-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.margins {
+  margin: 5px;
+}
+
+p {
+  margin-top: 5px;
+}
+
+ul {
+  margin-top: 5px;
+}
+
+li {
+  margin: 5px;
+  cursor: pointer;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
+</code></pre>
+    </div>
+
 
     
 </div>
@@ -356,8 +412,8 @@ export class AppHelpComponent implements OnInit {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><!--     This file is part of Web Virtual DJ.    Web Virtual DJ is free software: you can redistribute it and/or modify    it under the terms of the GNU General Public License as published by    the Free Software Foundation, either version 3 of the License, or    (at your option) any later version.    Web Virtual DJ is distributed in the hope that it will be useful,    but WITHOUT ANY WARRANTY; without even the implied warranty of    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the    GNU General Public License for more details.    You should have received a copy of the GNU General Public License    along with Web Virtual DJ.  If not, see <https://www.gnu.org/licenses/>.--><div class="help-container" id="app_help">  <div class="margins">    <p>{{ \'HELP.START\' | translate }}</p>    <p>{{ \'HELP.FEATURES\' | translate }}</p>    <ul>      <li (click)="help(\'play\')" id="app_help_play"> <img (dragstart)="$event.preventDefault()" draggable="false"          class="icon" src="assets/images/question.png">        {{ \'HELP.PLAY\' | translate }}</li>      <li (click)="help(\'maindeckvolume\')" id="app_help_main_deck_volume"><img (dragstart)="$event.preventDefault()"          draggable="false" class="icon" src="assets/images/question.png"> {{ \'HELP.MDECKVOLUME\' | translate }}</li>      <li (click)="help(\'mastervolume\')" id="app_help_master_volume"><img (dragstart)="$event.preventDefault()"          draggable="false" class="icon" src="assets/images/question.png">        {{ \'HELP.MVOLUME\' | translate }}</li>      <li (click)="help(\'equalizer\')" id="app_help_play_equalizer"><img (dragstart)="$event.preventDefault()"          draggable="false" class="icon" src="assets/images/question.png">        {{ \'HELP.EQUALIZER\' | translate }}</li>      <li (click)="help(\'cue\')" id="app_help_play_cue"><img (dragstart)="$event.preventDefault()" draggable="false"          class="icon" src="assets/images/question.png">        {{ \'HELP.CUE\' | translate }}</li>      <li (click)="help(\'pitch\')" id="app_help_play_pitch"><img (dragstart)="$event.preventDefault()" draggable="false"          class="icon" src="assets/images/question.png">        {{ \'HELP.PITCH\' | translate }}</li>      <li (click)="help(\'loop\')" id="app_help_play_loop"><img (dragstart)="$event.preventDefault()" draggable="false"          class="icon" src="assets/images/question.png">        {{ \'HELP.LOOPS\' | translate }}</li>      <li (click)="help(\'effects\')" id="app_help_play_effects"><img (dragstart)="$event.preventDefault()"          draggable="false" class="icon" src="assets/images/question.png">        {{ \'HELP.EFFECTS\' | translate }}</li>    </ul>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppAboutComponent', 'selector': 'app-about'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppDeckComponent', 'selector': 'app-deck'},{'name': 'AppEffectsCreatorComponent', 'selector': 'app-effects-creator'},{'name': 'AppEffectsSelectorComponent', 'selector': 'app-effects-selector'},{'name': 'AppHelpComponent', 'selector': 'app-help'},{'name': 'AppLayoutComponent', 'selector': 'app-layout'},{'name': 'AppMusicListComponent', 'selector': 'app-music-list'},{'name': 'AppSettingsComponent', 'selector': 'app-settings'},{'name': 'AppTabsComponent', 'selector': 'app-tabs'},{'name': 'AppVolumeComponent', 'selector': 'app-volume'},{'name': 'RouletteControllerComponent', 'selector': 'roulette-controller'},{'name': 'SliderControllerComponent', 'selector': 'slider-controller'}];
-    var DIRECTIVES = [{'name': 'AngularDraggableDirective', 'selector': '[ngDraggable]'}];
+    var COMPONENTS = [{'name': 'AppAboutComponent', 'selector': 'app-about'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppDeckComponent', 'selector': 'app-deck'},{'name': 'AppEffectsCreatorComponent', 'selector': 'app-effects-creator'},{'name': 'AppEffectsSelectorComponent', 'selector': 'app-effects-selector'},{'name': 'AppHelpComponent', 'selector': 'app-help'},{'name': 'AppLayoutComponent', 'selector': 'app-layout'},{'name': 'AppMusicListComponent', 'selector': 'app-music-list'},{'name': 'AppSettingsComponent', 'selector': 'app-settings'},{'name': 'AppTabsComponent', 'selector': 'app-tabs'},{'name': 'AppVolumeComponent', 'selector': 'app-volume'},{'name': 'RouletteControllerComponent', 'selector': 'app-roulette-controller'},{'name': 'SliderControllerComponent', 'selector': 'app-slider-controller'}];
+    var DIRECTIVES = [{'name': 'AngularDraggableDirective', 'selector': '[appNgDraggable]'}];
     var ACTUAL_COMPONENT = {'name': 'AppHelpComponent'};
 </script>
 <script src="../js/tree.js"></script>
@@ -375,9 +431,12 @@ export class AppHelpComponent implements OnInit {
 
 
 
+
+
+
                    </div><div class="search-results">
     <div class="has-results">
-        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
         <ul class="search-results-list"></ul>
     </div>
     <div class="no-results">
@@ -389,15 +448,27 @@ export class AppHelpComponent implements OnInit {
            </div>
        </div>
 
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'AppHelpComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>
        <script src="../js/libs/lit-html.js"></script>
-       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
 
        <script src="../js/libs/bootstrap-native.js"></script>
 

@@ -8,7 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-	      <link rel="stylesheet" href="../styles/style.css">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
     </head>
     <body>
 
@@ -18,10 +19,7 @@
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-                <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search">
-</div>
-            <compodoc-menu></compodoc-menu>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
@@ -38,7 +36,9 @@
 
 <ol class="breadcrumb">
   <li>Components</li>
-  <li>AppMusicListComponent</li>
+  <li
+  >
+  AppMusicListComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -50,6 +50,9 @@
         </li>
         <li >
             <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
         </li>
 </ul>
 
@@ -63,17 +66,18 @@
 
 
 
+
     <p class="comment">
         <h3>Implements</h3>
     </p>
     <p class="comment">
-                <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
     </p>
 
 
 <section>
     <h3>Metadata</h3>
-    <table class="table table-sm table-hover">
+    <table class="table table-sm table-hover metadata">
         <tbody>
 
 
@@ -93,7 +97,7 @@
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>app-music-list.component.css</code></td>
+                <td class="col-md-9"><code>./app-music-list.component.css</code></td>
             </tr>
 
 
@@ -102,6 +106,12 @@
                 <td class="col-md-3">templateUrl</td>
                 <td class="col-md-9"><code>./app-music-list.component.html</code></td>
             </tr>
+
+
+
+
+
+
 
 
         </tbody>
@@ -121,37 +131,37 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#dragging">dragging</a>
+                                <a href="#dragging" >dragging</a>
                             </li>
                             <li>
-                                <a href="#index">index</a>
+                                <a href="#index" >index</a>
                             </li>
                             <li>
-                                <a href="#musicList">musicList</a>
+                                <a href="#musicList" >musicList</a>
                             </li>
                             <li>
-                                <a href="#musicService">musicService</a>
+                                <a href="#musicService" >musicService</a>
                             </li>
                             <li>
-                                <a href="#offSet">offSet</a>
+                                <a href="#offSet" >offSet</a>
                             </li>
                             <li>
-                                <a href="#query">query</a>
+                                <a href="#query" >query</a>
                             </li>
                             <li>
-                                <a href="#scrollable">scrollable</a>
+                                <a href="#scrollable" >scrollable</a>
                             </li>
                             <li>
-                                <a href="#shownMusic">shownMusic</a>
+                                <a href="#shownMusic" >shownMusic</a>
                             </li>
                             <li>
-                                <a href="#songs">songs</a>
+                                <a href="#songs" >songs</a>
                             </li>
                             <li>
-                                <a href="#startX">startX</a>
+                                <a href="#startX" >startX</a>
                             </li>
                             <li>
-                                <a href="#startY">startY</a>
+                                <a href="#startY" >startY</a>
                             </li>
                         </ul>
                     </td>
@@ -166,31 +176,31 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#dragEnd">dragEnd</a>
+                                <a href="#dragEnd" >dragEnd</a>
                             </li>
                             <li>
-                                <a href="#dragStart">dragStart</a>
+                                <a href="#dragStart" >dragStart</a>
                             </li>
                             <li>
-                                <a href="#fileChangeEvent">fileChangeEvent</a>
+                                <a href="#fileChangeEvent" >fileChangeEvent</a>
                             </li>
                             <li>
-                                <a href="#loadOnDeck">loadOnDeck</a>
+                                <a href="#loadOnDeck" >loadOnDeck</a>
                             </li>
                             <li>
-                                <a href="#recievedFiles">recievedFiles</a>
+                                <a href="#recievedFiles" >recievedFiles</a>
                             </li>
                             <li>
-                                <a href="#removeAllSongs">removeAllSongs</a>
+                                <a href="#removeAllSongs" >removeAllSongs</a>
                             </li>
                             <li>
-                                <a href="#removeSong">removeSong</a>
+                                <a href="#removeSong" >removeSong</a>
                             </li>
                             <li>
-                                <a href="#saveStartPos">saveStartPos</a>
+                                <a href="#saveStartPos" >saveStartPos</a>
                             </li>
                             <li>
-                                <a href="#updateMusic">updateMusic</a>
+                                <a href="#updateMusic" >updateMusic</a>
                             </li>
                         </ul>
                     </td>
@@ -210,7 +220,7 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(musicService: <a href="../injectables/MusicLoaderService.html">MusicLoaderService</a>)</code>
+<code>constructor(musicService: <a href="../injectables/MusicLoaderService.html" target="_self">MusicLoaderService</a>)</code>
                     </td>
                 </tr>
                         <tr>
@@ -236,7 +246,7 @@
                                                         <td>musicService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/MusicLoaderService.html" target="_self" >MusicLoaderService</a></code>
+                                                                        <code><a href="../injectables/MusicLoaderService.html" target="_self" >MusicLoaderService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -259,938 +269,855 @@
 
     <section>
     
-        <h3 id="methods">
-            Methods
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="dragEnd"></a>
-                        <span class="name">
-                            <b>
-                            dragEnd
-                            </b>
-                            <a href="#dragEnd"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-<code>dragEnd(pos: , i: )</code>
-                    </td>
-                </tr>
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dragEnd"></a>
+                    <span class="name">
+                        <span ><b>dragEnd</b></span>
+                        <a href="#dragEnd"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>dragEnd(pos, i)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="105" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:105</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="105"
+                            class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:105</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>pos</td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pos</td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>i</td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="dragStart"></a>
-                        <span class="name">
-                            <b>
-                            dragStart
-                            </b>
-                            <a href="#dragStart"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-<code>dragStart(i: )</code>
-                    </td>
-                </tr>
+                                    <td>
+                                        No
+                                    </td>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:100</a></div>
-                            </td>
-                        </tr>
+                                </tr>
+                                <tr>
+                                    <td>i</td>
+
+                                    <td>
+                                        No
+                                    </td>
 
 
-                <tr>
-                    <td class="col-md-4">
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>i</td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dragStart"></a>
+                    <span class="name">
+                        <span ><b>dragStart</b></span>
+                        <a href="#dragStart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>dragStart(i)</code>
+                </td>
+            </tr>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="fileChangeEvent"></a>
-                        <span class="name">
-                            <b>
-                            fileChangeEvent
-                            </b>
-                            <a href="#fileChangeEvent"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>i</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fileChangeEvent"></a>
+                    <span class="name">
+                        <span ><b>fileChangeEvent</b></span>
+                        <a href="#fileChangeEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>fileChangeEvent(fileInput: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="84" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:84</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:84</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>fileInput</td>
-                                                        <td>
-                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>fileInput</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="loadOnDeck"></a>
-                        <span class="name">
-                            <b>
-                            loadOnDeck
-                            </b>
-                            <a href="#loadOnDeck"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-<code>loadOnDeck(deck: , song: )</code>
-                    </td>
-                </tr>
+                                    <td>
+                                        No
+                                    </td>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:58</a></div>
-                            </td>
-                        </tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadOnDeck"></a>
+                    <span class="name">
+                        <span ><b>loadOnDeck</b></span>
+                        <a href="#loadOnDeck"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadOnDeck(deck, song)</code>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="58"
+                            class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:58</a></div>
+                </td>
+            </tr>
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>deck</td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
 
-                                                </tr>
-                                                <tr>
-                                                        <td>song</td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+            <tr>
+                <td class="col-md-4">
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>deck</td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="recievedFiles"></a>
-                        <span class="name">
-                            <b>
-                            recievedFiles
-                            </b>
-                            <a href="#recievedFiles"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>song</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="recievedFiles"></a>
+                    <span class="name">
+                        <span ><b>recievedFiles</b></span>
+                        <a href="#recievedFiles"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>recievedFiles(files: FileList)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:88</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="88"
+                            class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:88</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>files</td>
-                                                        <td>
-                                                                    <code>FileList</code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>files</td>
+                                    <td>
+                                            <code>FileList</code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="removeAllSongs"></a>
-                        <span class="name">
-                            <b>
-                            removeAllSongs
-                            </b>
-                            <a href="#removeAllSongs"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeAllSongs"></a>
+                    <span class="name">
+                        <span ><b>removeAllSongs</b></span>
+                        <a href="#removeAllSongs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>removeAllSongs()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:97</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:97</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="removeSong"></a>
-                        <span class="name">
-                            <b>
-                            removeSong
-                            </b>
-                            <a href="#removeSong"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-<code>removeSong(song: )</code>
-                    </td>
-                </tr>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeSong"></a>
+                    <span class="name">
+                        <span ><b>removeSong</b></span>
+                        <a href="#removeSong"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeSong(song)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:61</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="61"
+                            class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:61</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>song</td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>song</td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="saveStartPos"></a>
-                        <span class="name">
-                            <b>
-                            saveStartPos
-                            </b>
-                            <a href="#saveStartPos"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-<code>saveStartPos(event: )</code>
-                    </td>
-                </tr>
+                                    <td>
+                                        No
+                                    </td>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="118" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:118</a></div>
-                            </td>
-                        </tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveStartPos"></a>
+                    <span class="name">
+                        <span ><b>saveStartPos</b></span>
+                        <a href="#saveStartPos"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveStartPos(event)</code>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="118"
+                            class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:118</a></div>
+                </td>
+            </tr>
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>event</td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            <tr>
+                <td class="col-md-4">
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="updateMusic"></a>
-                        <span class="name">
-                            <b>
-                            updateMusic
-                            </b>
-                            <a href="#updateMusic"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateMusic"></a>
+                    <span class="name">
+                        <span ><b>updateMusic</b></span>
+                        <a href="#updateMusic"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>updateMusic()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:64</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:64</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
-
     <section>
     
-        <h3 id="inputs">
-            Properties
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dragging"></a>
+                    <span class="name">
+                        <span ><b>dragging</b></span>
+                        <a href="#dragging"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="dragging"></a>
-                        <span class="name">
-                            <b>
-                            dragging
-                            </b>
-                            <a href="#dragging"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>dragging:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
-</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
 
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:33</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="index"></a>
-                        <span class="name">
-                            <b>
-                            index
-                            </b>
-                            <a href="#index"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>index:     <code></code>
-</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>-1</code>
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:33</a></div>
                         </td>
                     </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:41</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="index"></a>
+                    <span class="name">
+                        <span ><b>index</b></span>
+                        <a href="#index"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="musicList"></a>
-                        <span class="name">
-                            <b>
-                            musicList
-                            </b>
-                            <a href="#musicList"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>musicList:     <code>File[]</code>
-</code>
+                        <i>Default value : </i><code>-1</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code>File[]</code>
-
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:41</a></div>
                         </td>
                     </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:30</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="musicList"></a>
+                    <span class="name">
+                        <span ><b>musicList</b></span>
+                        <a href="#musicList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="musicService"></a>
-                        <span class="name">
-                            <b>
-                            musicService
-                            </b>
-                            <a href="#musicService"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>musicService:     <code><a href="../injectables/MusicLoaderService.html" target="_self" >MusicLoaderService</a></code>
-</code>
+                        <i>Type : </i>    <code>File[]</code>
+
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="../injectables/MusicLoaderService.html" target="_self" >MusicLoaderService</a></code>
-
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:30</a></div>
                         </td>
                     </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:28</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="musicService"></a>
+                    <span class="name">
+                        <span ><b>musicService</b></span>
+                        <a href="#musicService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="offSet"></a>
-                        <span class="name">
-                            <b>
-                            offSet
-                            </b>
-                            <a href="#offSet"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>offSet:     <code></code>
-</code>
-                    </td>
-                </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:40</a></div>
-                            </td>
-                        </tr>
+                        <i>Type : </i>        <code><a href="../injectables/MusicLoaderService.html" target="_self" >MusicLoaderService</a></code>
 
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="query"></a>
-                        <span class="name">
-                            <b>
-                            query
-                            </b>
-                            <a href="#query"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>query:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:28</a></div>
                         </td>
                     </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:32</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="offSet"></a>
+                    <span class="name">
+                        <span ><b>offSet</b></span>
+                        <a href="#offSet"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="query"></a>
+                    <span class="name">
+                        <span ><b>query</b></span>
+                        <a href="#query"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="scrollable"></a>
-                        <span class="name">
-                            <b>
-                            scrollable
-                            </b>
-                            <a href="#scrollable"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>scrollable:     <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
-</code>
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
-
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:32</a></div>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Decorators : </i><code>ViewChild</code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:39</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="scrollable"></a>
+                    <span class="name">
+                        <span ><b>scrollable</b></span>
+                        <a href="#scrollable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="shownMusic"></a>
-                        <span class="name">
-                            <b>
-                            shownMusic
-                            </b>
-                            <a href="#shownMusic"><span class="icon ion-ios-link"></span></a>
-                        </span>
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
                     </td>
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                        <code>shownMusic:     <code>File[]</code>
-</code>
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;container&#x27;, {static: true})<br />
+                        </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code>File[]</code>
-
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:39</a></div>
                         </td>
                     </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:31</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shownMusic"></a>
+                    <span class="name">
+                        <span ><b>shownMusic</b></span>
+                        <a href="#shownMusic"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
                 <tr>
                     <td class="col-md-4">
-                        <a name="songs"></a>
-                        <span class="name">
-                            <b>
-                            songs
-                            </b>
-                            <a href="#songs"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>songs:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-</code>
+                        <i>Type : </i>    <code>File[]</code>
+
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:31</a></div>
                         </td>
                     </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="songs"></a>
+                    <span class="name">
+                        <span ><b>songs</b></span>
+                        <a href="#songs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChildren(AngularDraggableDirective)<br />
+                        </code>
+                    </td>
+                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Decorators : </i><code>ViewChildren</code>
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:37</a></div>
                         </td>
                     </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:37</a></div>
-                            </td>
-                        </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="startX"></a>
-                        <span class="name">
-                            <b>
-                            startX
-                            </b>
-                            <a href="#startX"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>startX:     <code></code>
-</code>
-                    </td>
-                </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:34</a></div>
-                            </td>
-                        </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startX"></a>
+                    <span class="name">
+                        <span ><b>startX</b></span>
+                        <a href="#startX"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:34</a></div>
+                        </td>
+                    </tr>
 
 
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="startY"></a>
-                        <span class="name">
-                            <b>
-                            startY
-                            </b>
-                            <a href="#startY"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>startY:     <code></code>
-</code>
-                    </td>
-                </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:35</a></div>
-                            </td>
-                        </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startY"></a>
+                    <span class="name">
+                        <span ><b>startY</b></span>
+                        <a href="#startY"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/components/app-music-list/app-music-list.component.ts:35</a></div>
+                        </td>
+                    </tr>
 
 
-            </tbody>
-        </table>
+        </tbody>
+    </table>
 </section>
 
 </div>
@@ -1391,6 +1318,193 @@ export class AppMusicListComponent implements OnDestroy {
 &lt;/div&gt;</code></pre>
     </div>
 
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./app-music-list.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">/**
+  This file is part of Web Virtual DJ.
+
+Web Virtual DJ is free software: you can redistribute it and / or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+Web Virtual DJ is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+along with Web Virtual DJ.If not, see &lt; https://www.gnu.org/licenses/&gt;.
+*/
+
+.music-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: initial;
+  height: 100%;
+}
+
+.music-container-dragging {
+  overflow-y: visible;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 2em;
+  align-items: center;
+}
+
+.list-item:hover {
+  background-color: #444444;
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  height: 2em;
+}
+
+td {
+  padding: 5px;
+}
+
+.header {
+  background-color: #222222;
+}
+
+.elements:nth-child(even) {
+  background-color: #444444;
+}
+
+.elements:nth-child(odd) {
+  background-color: #555555;
+}
+
+.elements:hover {
+  background-color: #333333;
+}
+
+.icons-container {
+  display: flex;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.icon--clickable {
+  cursor: pointer;
+}
+
+.info {
+  max-width: 0;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header {
+  font-weight: 600;
+}
+
+.start-instructions {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-search {
+  display: flex;
+  align-items: center;
+}
+
+.music-search &gt; * {
+  width: 50%;
+}
+
+.searchbar {
+  padding: 0px;
+}
+
+.button {
+  margin-bottom: 0;
+  text-align: center;
+  touch-action: manipulation;
+  cursor: pointer;
+  /* height: 35px; */
+  border: none;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.4;
+  border-radius: 2px;
+  padding: 7px 15px;
+  padding-top: 7px;
+  transition: all 0.12s linear;
+  width: 100%;
+  max-width: 170px;
+  min-width: 95px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis;
+  background-position: left 0 top 0;
+  background-size: auto 100%;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button--green {
+  color: #fff;
+  background: linear-gradient(#6dbb80, #059a67);
+  border-color: #059a67;
+}
+
+.centered {
+  display: flex;
+  width: 100%;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.hide-input {
+  display: none;
+}
+
+.margintop {
+  margin-top: 5px;
+}
+
+.start-text {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+</code></pre>
+    </div>
+
 
     
 </div>
@@ -1400,8 +1514,8 @@ export class AppMusicListComponent implements OnDestroy {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><!--     This file is part of Web Virtual DJ.    Web Virtual DJ is free software: you can redistribute it and/or modify    it under the terms of the GNU General Public License as published by    the Free Software Foundation, either version 3 of the License, or    (at your option) any later version.    Web Virtual DJ is distributed in the hope that it will be useful,    but WITHOUT ANY WARRANTY; without even the implied warranty of    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the    GNU General Public License for more details.    You should have received a copy of the GNU General Public License    along with Web Virtual DJ.  If not, see <https://www.gnu.org/licenses/>.--><div class="music-container" id="app_music_list_container" [ngClass]="{\'music-container-dragging\':dragging}" #container>  <table *ngIf="musicList.length>0" id="app_music_list">    <tr class="header">      <td></td>      <td>        <div class="music-search">          <div>{{ \'MUSIC.SONG\' | translate }}</div>          <div class="centered">            <input class="hide-input" id="load_music" type="file" (input)="fileChangeEvent($event)" accept="audio/*"              multiple=true />            <label class="button button--green" for="load_music" id="load_music_button">{{ \'MUSIC.CHOOSE\' | translate              }}</label>          </div>          <div class="searchbar">            <input type="text" class="searchbox" [(ngModel)]="query" (ngModelChange)="updateMusic()" />            <div id="b" class="searchbutton"></div>          </div>        </div>      </td>      <!-- <td class="header">Artist</td> -->      <td>        <div title="Remove all" class="icon-container" (click)="removeAllSongs()">          <img (dragstart)="$event.preventDefault()" class="icon icon--clickable" src="assets/images/error.svg">        </div>      </td>    </tr>    <tr class="elements" *ngFor="let song of shownMusic;let i = index" ngDraggable [zIndexMoving]="9999"      (started)="dragStart(i)" (endOffset)="dragEnd($event,i)" (mousedown)="saveStartPos($event)" [lockAxis]="x"      [position]="index===i?offSet:{x:0,y:0}">      <td class="icon-container">        <img (dragstart)="$event.preventDefault()" class="icon" src="assets/images/music-player.svg">      </td>      <td title="" class="info">{{song.name}}</td>      <!-- <td title="" class="info"></td> -->      <td>        <div class="icons-container">          <div title="Load in deck 1" class="icon-container" (click)="loadOnDeck(0, song)"            (mousedown)="$event.stopPropagation()" (touchstart)="$event.stopPropagation()">            <img (dragstart)="$event.preventDefault()" class="icon icon--clickable" src="assets/images/uno.svg">          </div>          <div title="Load in deck 2" class="icon-container" (click)="loadOnDeck(1, song)"            (mousedown)="$event.stopPropagation()" (touchstart)="$event.stopPropagation()">            <img (dragstart)="$event.preventDefault()" class="icon icon--clickable" src="assets/images/dos.svg">          </div>          <div title="Remove" class="icon-container" (click)="removeSong(song)" (mousedown)="$event.stopPropagation()"            (touchstart)="$event.stopPropagation()">            <img (dragstart)="$event.preventDefault()" class="icon icon--clickable" src="assets/images/error.svg">          </div>        </div>      </td>    </tr>    <tr *ngIf="shownMusic.length === 0">      <td COLSPAN="3">{{ \'MUSIC.NOMATCH\' | translate }} {{query}}</td>    </tr>  </table>  <div *ngIf="musicList.length === 0" class="start-instructions" id="app_start_instructions">    <div class="start-text">{{ \'MUSIC.START\' | translate }}</div>    <div class="centered margintop">      <input class="hide-input" id="load_music" type="file" (input)="fileChangeEvent($event)" accept="audio/*"        multiple=true />      <label class="button button--green" for="load_music"        id="load_music_button">{{ \'MUSIC.CHOOSE\' | translate }}</label>    </div>  </div>  <!-- {{musicService.music}} --></div></div>'
-    var COMPONENTS = [{'name': 'AppAboutComponent', 'selector': 'app-about'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppDeckComponent', 'selector': 'app-deck'},{'name': 'AppEffectsCreatorComponent', 'selector': 'app-effects-creator'},{'name': 'AppEffectsSelectorComponent', 'selector': 'app-effects-selector'},{'name': 'AppHelpComponent', 'selector': 'app-help'},{'name': 'AppLayoutComponent', 'selector': 'app-layout'},{'name': 'AppMusicListComponent', 'selector': 'app-music-list'},{'name': 'AppSettingsComponent', 'selector': 'app-settings'},{'name': 'AppTabsComponent', 'selector': 'app-tabs'},{'name': 'AppVolumeComponent', 'selector': 'app-volume'},{'name': 'RouletteControllerComponent', 'selector': 'roulette-controller'},{'name': 'SliderControllerComponent', 'selector': 'slider-controller'}];
-    var DIRECTIVES = [{'name': 'AngularDraggableDirective', 'selector': '[ngDraggable]'}];
+    var COMPONENTS = [{'name': 'AppAboutComponent', 'selector': 'app-about'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppDeckComponent', 'selector': 'app-deck'},{'name': 'AppEffectsCreatorComponent', 'selector': 'app-effects-creator'},{'name': 'AppEffectsSelectorComponent', 'selector': 'app-effects-selector'},{'name': 'AppHelpComponent', 'selector': 'app-help'},{'name': 'AppLayoutComponent', 'selector': 'app-layout'},{'name': 'AppMusicListComponent', 'selector': 'app-music-list'},{'name': 'AppSettingsComponent', 'selector': 'app-settings'},{'name': 'AppTabsComponent', 'selector': 'app-tabs'},{'name': 'AppVolumeComponent', 'selector': 'app-volume'},{'name': 'RouletteControllerComponent', 'selector': 'app-roulette-controller'},{'name': 'SliderControllerComponent', 'selector': 'app-slider-controller'}];
+    var DIRECTIVES = [{'name': 'AngularDraggableDirective', 'selector': '[appNgDraggable]'}];
     var ACTUAL_COMPONENT = {'name': 'AppMusicListComponent'};
 </script>
 <script src="../js/tree.js"></script>
@@ -1419,9 +1533,12 @@ export class AppMusicListComponent implements OnDestroy {
 
 
 
+
+
+
                    </div><div class="search-results">
     <div class="has-results">
-        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
         <ul class="search-results-list"></ul>
     </div>
     <div class="no-results">
@@ -1433,15 +1550,27 @@ export class AppMusicListComponent implements OnDestroy {
            </div>
        </div>
 
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'AppMusicListComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>
        <script src="../js/libs/lit-html.js"></script>
-       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
 
        <script src="../js/libs/bootstrap-native.js"></script>
 
