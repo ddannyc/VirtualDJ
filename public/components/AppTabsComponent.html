@@ -851,52 +851,78 @@ export class AppTabsComponent {
     You should have received a copy of the GNU General Public License
     along with Web Virtual DJ.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
 --&gt;
-&lt;div class&#x3D;&quot;tabs-container&quot; [ngClass]&#x3D;&quot;{&#x27;maximized-container&#x27;:maximized}&quot; (drop)&#x3D;&quot;droped($event)&quot;&gt;
-  &lt;div class&#x3D;&quot;tabs&quot; [ngClass]&#x3D;&quot;{&#x27;maximized-tabs&#x27;:maximized}&quot; *ngIf&#x3D;&quot;!dragging&quot;&gt;
+&lt;div class&#x3D;&quot;tabs-container&quot; [ngClass]&#x3D;&quot;{ &#x27;maximized-container&#x27;: maximized }&quot; (drop)&#x3D;&quot;droped($event)&quot;&gt;
+  &lt;div class&#x3D;&quot;tabs&quot; [ngClass]&#x3D;&quot;{ &#x27;maximized-tabs&#x27;: maximized }&quot; *ngIf&#x3D;&quot;!dragging&quot;&gt;
     &lt;div class&#x3D;&quot;tablist&quot;&gt;
-      &lt;div [ngClass]&#x3D;&quot;{&#x27;tab&#x27;:true, &#x27;tab--active&#x27;:active&#x3D;&#x3D;&#x3D;&#x27;music&#x27;}&quot; (click)&#x3D;&quot;setActive(&#x27;music&#x27;)&quot;
-        id&#x3D;&quot;app_tabs_music_list&quot;&gt;
+      &lt;div
+        [ngClass]&#x3D;&quot;{ tab: true, &#x27;tab--active&#x27;: active &#x3D;&#x3D;&#x3D; &#x27;music&#x27; }&quot;
+        (click)&#x3D;&quot;setActive(&#x27;music&#x27;)&quot;
+        id&#x3D;&quot;app_tabs_music_list&quot;
+      &gt;
         {{ &#x27;TABS.MUSIC&#x27; | translate }}
       &lt;/div&gt;
-      &lt;div [ngClass]&#x3D;&quot;{&#x27;tab&#x27;:true, &#x27;tab--active&#x27;:active&#x3D;&#x3D;&#x3D;&#x27;effectssel&#x27;}&quot; (click)&#x3D;&quot;setActive(&#x27;effectssel&#x27;)&quot;
-        id&#x3D;&quot;app_tabs_effectssel&quot;&gt;
+      &lt;div
+        [ngClass]&#x3D;&quot;{ tab: true, &#x27;tab--active&#x27;: active &#x3D;&#x3D;&#x3D; &#x27;effectssel&#x27; }&quot;
+        (click)&#x3D;&quot;setActive(&#x27;effectssel&#x27;)&quot;
+        id&#x3D;&quot;app_tabs_effectssel&quot;
+      &gt;
         {{ &#x27;TABS.EFFECTSSEL&#x27; | translate }}
       &lt;/div&gt;
-      &lt;div [ngClass]&#x3D;&quot;{&#x27;tab&#x27;:true, &#x27;tab--active&#x27;:active&#x3D;&#x3D;&#x3D;&#x27;effectscr&#x27;}&quot; (click)&#x3D;&quot;setActive(&#x27;effectscr&#x27;)&quot;
-        id&#x3D;&quot;app_tabs_effects_creator&quot;&gt;
+      &lt;div
+        [ngClass]&#x3D;&quot;{ tab: true, &#x27;tab--active&#x27;: active &#x3D;&#x3D;&#x3D; &#x27;effectscr&#x27; }&quot;
+        (click)&#x3D;&quot;setActive(&#x27;effectscr&#x27;)&quot;
+        id&#x3D;&quot;app_tabs_effects_creator&quot;
+      &gt;
         {{ &#x27;TABS.EFFCREATOR&#x27; | translate }}
       &lt;/div&gt;
-      &lt;div [ngClass]&#x3D;&quot;{&#x27;tab&#x27;:true, &#x27;tab--active&#x27;:active&#x3D;&#x3D;&#x3D;&#x27;help&#x27;}&quot; (click)&#x3D;&quot;setActive(&#x27;help&#x27;)&quot; id&#x3D;&quot;app_tabs_help&quot;&gt;
+      &lt;div [ngClass]&#x3D;&quot;{ tab: true, &#x27;tab--active&#x27;: active &#x3D;&#x3D;&#x3D; &#x27;help&#x27; }&quot; (click)&#x3D;&quot;setActive(&#x27;help&#x27;)&quot; id&#x3D;&quot;app_tabs_help&quot;&gt;
         {{ &#x27;TABS.HELP&#x27; | translate }}
       &lt;/div&gt;
-      &lt;div [ngClass]&#x3D;&quot;{&#x27;tab&#x27;:true, &#x27;tab--active&#x27;:active&#x3D;&#x3D;&#x3D;&#x27;settings&#x27;}&quot; (click)&#x3D;&quot;setActive(&#x27;settings&#x27;)&quot;
-        id&#x3D;&quot;app_tabs_settings&quot;&gt;
+      &lt;div
+        [ngClass]&#x3D;&quot;{ tab: true, &#x27;tab--active&#x27;: active &#x3D;&#x3D;&#x3D; &#x27;settings&#x27; }&quot;
+        (click)&#x3D;&quot;setActive(&#x27;settings&#x27;)&quot;
+        id&#x3D;&quot;app_tabs_settings&quot;
+      &gt;
         {{ &#x27;TABS.SETTINGS&#x27; | translate }}
       &lt;/div&gt;
-      &lt;div [ngClass]&#x3D;&quot;{&#x27;tab&#x27;:true, &#x27;tab--active&#x27;:active&#x3D;&#x3D;&#x3D;&#x27;about&#x27;}&quot; (click)&#x3D;&quot;setActive(&#x27;about&#x27;)&quot; id&#x3D;&quot;app_tabs_about&quot;&gt;
+      &lt;div
+        [ngClass]&#x3D;&quot;{ tab: true, &#x27;tab--active&#x27;: active &#x3D;&#x3D;&#x3D; &#x27;about&#x27; }&quot;
+        (click)&#x3D;&quot;setActive(&#x27;about&#x27;)&quot;
+        id&#x3D;&quot;app_tabs_about&quot;
+      &gt;
         {{ &#x27;TABS.ABOUT&#x27; | translate }}
       &lt;/div&gt;
       &lt;div style&#x3D;&quot;margin-left: auto;margin-right:5px; display:flex; align-items: center;&quot; (click)&#x3D;&quot;maximize()&quot;&gt;
-        &lt;img (dragstart)&#x3D;&quot;$event.preventDefault()&quot; draggable&#x3D;&quot;false&quot; class&#x3D;&quot;icon icon--clickable&quot;
-          src&#x3D;&quot;assets/images/maximize.png&quot; *ngIf&#x3D;&quot;!maximized&quot;&gt;
-        &lt;img (dragstart)&#x3D;&quot;$event.preventDefault()&quot; draggable&#x3D;&quot;false&quot; class&#x3D;&quot;icon icon--clickable&quot;
-          src&#x3D;&quot;assets/images/minimize.png&quot; *ngIf&#x3D;&quot;maximized&quot;&gt;
+        &lt;img
+          (dragstart)&#x3D;&quot;$event.preventDefault()&quot;
+          draggable&#x3D;&quot;false&quot;
+          class&#x3D;&quot;icon icon--clickable&quot;
+          src&#x3D;&quot;assets/images/maximize.png&quot;
+          *ngIf&#x3D;&quot;!maximized&quot;
+        /&gt;
+        &lt;img
+          (dragstart)&#x3D;&quot;$event.preventDefault()&quot;
+          draggable&#x3D;&quot;false&quot;
+          class&#x3D;&quot;icon icon--clickable&quot;
+          src&#x3D;&quot;assets/images/minimize.png&quot;
+          *ngIf&#x3D;&quot;maximized&quot;
+        /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class&#x3D;&quot;contents&quot;&gt;
-      &lt;app-music-list *ngIf&#x3D;&quot;active&#x3D;&#x3D;&#x3D;&#x27;music&#x27;&quot;&gt;&lt;/app-music-list&gt;
-      &lt;app-effects-selector *ngIf&#x3D;&quot;active&#x3D;&#x3D;&#x3D;&#x27;effectssel&#x27;&quot;&gt;&lt;/app-effects-selector&gt;
-      &lt;app-settings *ngIf&#x3D;&quot;active&#x3D;&#x3D;&#x3D;&#x27;settings&#x27;&quot;&gt;&lt;/app-settings&gt;
-      &lt;app-effects-creator *ngIf&#x3D;&quot;active&#x3D;&#x3D;&#x3D;&#x27;effectscr&#x27;&quot;&gt;&lt;/app-effects-creator&gt;
-      &lt;app-help *ngIf&#x3D;&quot;active&#x3D;&#x3D;&#x3D;&#x27;help&#x27;&quot;&gt;&lt;/app-help&gt;
-      &lt;app-about *ngIf&#x3D;&quot;active&#x3D;&#x3D;&#x3D;&#x27;about&#x27;&quot;&gt;&lt;/app-about&gt;
+      &lt;app-music-list *ngIf&#x3D;&quot;active &#x3D;&#x3D;&#x3D; &#x27;music&#x27;&quot;&gt;&lt;/app-music-list&gt;
+      &lt;app-effects-selector *ngIf&#x3D;&quot;active &#x3D;&#x3D;&#x3D; &#x27;effectssel&#x27;&quot;&gt;&lt;/app-effects-selector&gt;
+      &lt;app-settings *ngIf&#x3D;&quot;active &#x3D;&#x3D;&#x3D; &#x27;settings&#x27;&quot;&gt;&lt;/app-settings&gt;
+      &lt;app-effects-creator *ngIf&#x3D;&quot;active &#x3D;&#x3D;&#x3D; &#x27;effectscr&#x27;&quot;&gt;&lt;/app-effects-creator&gt;
+      &lt;app-help *ngIf&#x3D;&quot;active &#x3D;&#x3D;&#x3D; &#x27;help&#x27;&quot;&gt;&lt;/app-help&gt;
+      &lt;app-about *ngIf&#x3D;&quot;active &#x3D;&#x3D;&#x3D; &#x27;about&#x27;&quot;&gt;&lt;/app-about&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class&#x3D;&quot;drop&quot; *ngIf&#x3D;&quot;dragging&quot;&gt;
     {{ &#x27;TABS.DROP&#x27; | translate }}
-
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
@@ -1013,7 +1039,7 @@ along with Web Virtual DJ.If not, see &lt; https://www.gnu.org/licenses/&gt;.
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><!--     This file is part of Web Virtual DJ.    Web Virtual DJ is free software: you can redistribute it and/or modify    it under the terms of the GNU General Public License as published by    the Free Software Foundation, either version 3 of the License, or    (at your option) any later version.    Web Virtual DJ is distributed in the hope that it will be useful,    but WITHOUT ANY WARRANTY; without even the implied warranty of    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the    GNU General Public License for more details.    You should have received a copy of the GNU General Public License    along with Web Virtual DJ.  If not, see <https://www.gnu.org/licenses/>.--><div class="tabs-container" [ngClass]="{\'maximized-container\':maximized}" (drop)="droped($event)">  <div class="tabs" [ngClass]="{\'maximized-tabs\':maximized}" *ngIf="!dragging">    <div class="tablist">      <div [ngClass]="{\'tab\':true, \'tab--active\':active===\'music\'}" (click)="setActive(\'music\')"        id="app_tabs_music_list">        {{ \'TABS.MUSIC\' | translate }}      </div>      <div [ngClass]="{\'tab\':true, \'tab--active\':active===\'effectssel\'}" (click)="setActive(\'effectssel\')"        id="app_tabs_effectssel">        {{ \'TABS.EFFECTSSEL\' | translate }}      </div>      <div [ngClass]="{\'tab\':true, \'tab--active\':active===\'effectscr\'}" (click)="setActive(\'effectscr\')"        id="app_tabs_effects_creator">        {{ \'TABS.EFFCREATOR\' | translate }}      </div>      <div [ngClass]="{\'tab\':true, \'tab--active\':active===\'help\'}" (click)="setActive(\'help\')" id="app_tabs_help">        {{ \'TABS.HELP\' | translate }}      </div>      <div [ngClass]="{\'tab\':true, \'tab--active\':active===\'settings\'}" (click)="setActive(\'settings\')"        id="app_tabs_settings">        {{ \'TABS.SETTINGS\' | translate }}      </div>      <div [ngClass]="{\'tab\':true, \'tab--active\':active===\'about\'}" (click)="setActive(\'about\')" id="app_tabs_about">        {{ \'TABS.ABOUT\' | translate }}      </div>      <div style="margin-left: auto;margin-right:5px; display:flex; align-items: center;" (click)="maximize()">        <img (dragstart)="$event.preventDefault()" draggable="false" class="icon icon--clickable"          src="assets/images/maximize.png" *ngIf="!maximized">        <img (dragstart)="$event.preventDefault()" draggable="false" class="icon icon--clickable"          src="assets/images/minimize.png" *ngIf="maximized">      </div>    </div>    <div class="contents">      <app-music-list *ngIf="active===\'music\'"></app-music-list>      <app-effects-selector *ngIf="active===\'effectssel\'"></app-effects-selector>      <app-settings *ngIf="active===\'settings\'"></app-settings>      <app-effects-creator *ngIf="active===\'effectscr\'"></app-effects-creator>      <app-help *ngIf="active===\'help\'"></app-help>      <app-about *ngIf="active===\'about\'"></app-about>    </div>  </div>  <div class="drop" *ngIf="dragging">    {{ \'TABS.DROP\' | translate }}  </div></div></div>'
+        var COMPONENT_TEMPLATE = '<div><!--     This file is part of Web Virtual DJ.    Web Virtual DJ is free software: you can redistribute it and/or modify    it under the terms of the GNU General Public License as published by    the Free Software Foundation, either version 3 of the License, or    (at your option) any later version.    Web Virtual DJ is distributed in the hope that it will be useful,    but WITHOUT ANY WARRANTY; without even the implied warranty of    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the    GNU General Public License for more details.    You should have received a copy of the GNU General Public License    along with Web Virtual DJ.  If not, see <https://www.gnu.org/licenses/>.--><div class="tabs-container" [ngClass]="{ \'maximized-container\': maximized }" (drop)="droped($event)">  <div class="tabs" [ngClass]="{ \'maximized-tabs\': maximized }" *ngIf="!dragging">    <div class="tablist">      <div        [ngClass]="{ tab: true, \'tab--active\': active === \'music\' }"        (click)="setActive(\'music\')"        id="app_tabs_music_list"      >        {{ \'TABS.MUSIC\' | translate }}      </div>      <div        [ngClass]="{ tab: true, \'tab--active\': active === \'effectssel\' }"        (click)="setActive(\'effectssel\')"        id="app_tabs_effectssel"      >        {{ \'TABS.EFFECTSSEL\' | translate }}      </div>      <div        [ngClass]="{ tab: true, \'tab--active\': active === \'effectscr\' }"        (click)="setActive(\'effectscr\')"        id="app_tabs_effects_creator"      >        {{ \'TABS.EFFCREATOR\' | translate }}      </div>      <div [ngClass]="{ tab: true, \'tab--active\': active === \'help\' }" (click)="setActive(\'help\')" id="app_tabs_help">        {{ \'TABS.HELP\' | translate }}      </div>      <div        [ngClass]="{ tab: true, \'tab--active\': active === \'settings\' }"        (click)="setActive(\'settings\')"        id="app_tabs_settings"      >        {{ \'TABS.SETTINGS\' | translate }}      </div>      <div        [ngClass]="{ tab: true, \'tab--active\': active === \'about\' }"        (click)="setActive(\'about\')"        id="app_tabs_about"      >        {{ \'TABS.ABOUT\' | translate }}      </div>      <div style="margin-left: auto;margin-right:5px; display:flex; align-items: center;" (click)="maximize()">        <img          (dragstart)="$event.preventDefault()"          draggable="false"          class="icon icon--clickable"          src="assets/images/maximize.png"          *ngIf="!maximized"        />        <img          (dragstart)="$event.preventDefault()"          draggable="false"          class="icon icon--clickable"          src="assets/images/minimize.png"          *ngIf="maximized"        />      </div>    </div>    <div class="contents">      <app-music-list *ngIf="active === \'music\'"></app-music-list>      <app-effects-selector *ngIf="active === \'effectssel\'"></app-effects-selector>      <app-settings *ngIf="active === \'settings\'"></app-settings>      <app-effects-creator *ngIf="active === \'effectscr\'"></app-effects-creator>      <app-help *ngIf="active === \'help\'"></app-help>      <app-about *ngIf="active === \'about\'"></app-about>    </div>  </div>  <div class="drop" *ngIf="dragging">    {{ \'TABS.DROP\' | translate }}  </div></div></div>'
     var COMPONENTS = [{'name': 'AppAboutComponent', 'selector': 'app-about'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppDeckComponent', 'selector': 'app-deck'},{'name': 'AppEffectsCreatorComponent', 'selector': 'app-effects-creator'},{'name': 'AppEffectsSelectorComponent', 'selector': 'app-effects-selector'},{'name': 'AppHelpComponent', 'selector': 'app-help'},{'name': 'AppLayoutComponent', 'selector': 'app-layout'},{'name': 'AppMusicListComponent', 'selector': 'app-music-list'},{'name': 'AppSettingsComponent', 'selector': 'app-settings'},{'name': 'AppTabsComponent', 'selector': 'app-tabs'},{'name': 'AppVolumeComponent', 'selector': 'app-volume'},{'name': 'RouletteControllerComponent', 'selector': 'app-roulette-controller'},{'name': 'SliderControllerComponent', 'selector': 'app-slider-controller'}];
     var DIRECTIVES = [{'name': 'AngularDraggableDirective', 'selector': '[appNgDraggable]'}];
     var ACTUAL_COMPONENT = {'name': 'AppTabsComponent'};
