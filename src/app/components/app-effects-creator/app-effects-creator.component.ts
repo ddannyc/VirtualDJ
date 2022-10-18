@@ -16,7 +16,7 @@ along with Web Virtual DJ.If not, see < https://www.gnu.org/licenses/>.
 */
 import { Component, OnInit } from '@angular/core';
 import { EffectsService } from '../../services/effects.service';
-import { FormBuilder, FormGroup, AbstractControl, Validators, ValidatorFn } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, AbstractControl, Validators, ValidatorFn } from '@angular/forms';
 import { PlayerService } from 'src/app/services/player.service';
 import { effectsCreatorArray } from 'src/app/data/effectsCreator';
 
@@ -32,13 +32,17 @@ export class AppEffectsCreatorComponent implements OnInit {
   selectedEffectRemove: string;
   effectStruct: any;
   JSON = JSON;
-  config: FormGroup;
+  config: UntypedFormGroup;
   name = '';
   validName = false;
   defaultStep = 0.01;
   selectedEffects;
   removableEffects;
-  constructor(private effectServ: EffectsService, private builder: FormBuilder, private playerServ: PlayerService) {
+  constructor(
+    private effectServ: EffectsService,
+    private builder: UntypedFormBuilder,
+    private playerServ: PlayerService
+  ) {
     this.effectsCreatorArray = effectsCreatorArray;
     this.effects = this.effectServ.getEffects();
   }
