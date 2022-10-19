@@ -34,7 +34,7 @@ deploy_stage:
   script:
     - rm ./package-lock.json
     - ./node_modules/@angular/cli/bin/ng build --progress false --prod --base-href http://virtualdj-stage.surge.sh
-    - ./node_modules/.bin/surge -p dist/TFG --domain virtualdj-stage.surge.sh
+    - ./node_modules/.bin/surge -p dist/VDJ --domain virtualdj-stage.surge.sh
 
 deploy_prod:
   stage: deploy
@@ -46,7 +46,7 @@ deploy_prod:
   script:
     - rm ./package-lock.json
     - ./node_modules/@angular/cli/bin/ng build --progress false --prod --base-href http://virtualdj.surge.sh
-    - ./node_modules/.bin/surge -p dist/TFG --domain virtualdj.surge.sh
+    - ./node_modules/.bin/surge -p dist/VDJ --domain virtualdj.surge.sh
 
 pages:
   stage: deploy
