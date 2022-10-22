@@ -23,6 +23,7 @@ import * as Cursor from 'wavesurfer.js/dist/plugin/wavesurfer.cursor.min.js';
 import * as Regions from 'wavesurfer.js/dist/plugin/wavesurfer.regions.min.js';
 import { HelpService } from 'src/app/services/help.service';
 import { TranslationService } from 'src/app/services/translation.service';
+import { TransitService } from 'src/app/services/transit.service';
 
 @Component({
   selector: 'app-deck',
@@ -55,11 +56,14 @@ export class AppDeckComponent implements OnInit, AfterViewInit, OnDestroy {
   help: any;
   playerService: PlayerService;
   locale: string;
+  // autoTransit: boolean;
+  // autoTransitDuration: number;
   constructor(
     private musicService: MusicLoaderService,
     playerService: PlayerService,
     helpService: HelpService,
-    translationService: TranslationService
+    translationService: TranslationService,
+    private transitService: TransitService
   ) {
     this.playerService = playerService;
     helpService.help$.subscribe(help => {
@@ -69,6 +73,12 @@ export class AppDeckComponent implements OnInit, AfterViewInit, OnDestroy {
     translationService.getTranslation().onLangChange.subscribe(value => {
       this.locale = value.lang;
     });
+    // transitService.transit$.subscribe((transit: boolean) => {
+    //   this.autoTransit = transit;
+    // });
+    // transitService.duration$.subscribe((duration: number) => {
+    //   this.autoTransitDuration = duration;
+    // });
   }
   ngOnInit() {
     setInterval(() => {
@@ -117,6 +127,9 @@ export class AppDeckComponent implements OnInit, AfterViewInit, OnDestroy {
           this.resetDisc();
           this.resetCUE();
           this.resetPitch();
+        });
+        this.playerService.on(this.deckNumber, 'audioprocess', (current: number) => {
+          this.transitService.auto(this.deckNumber, current);
         });
       });
       this.musicSubscription = this.musicService.decksongs$[this.deckNumber].subscribe(a => {

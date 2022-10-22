@@ -21,7 +21,6 @@
 
       <select [(ngModel)]=lang (ngModelChange)="changeLang()">
         <option value="en">English</option>
-        <option value="es">Spanish</option>
       </select>
     </div>
     <!-- <div class="question">
@@ -46,6 +45,16 @@
         <option value="1280x800">1280x800</option>
         <option value="1280x720">1280x720</option>
         <option value="1024x768">1024x768</option>
+      </select>
+    </div>
+    <div class="question">
+      <div class="question-label">
+        {{ 'SETTINGS.AUTO_TRANSIT' | translate }}
+        <input type="checkbox" [(ngModel)]=transit (ngModelChange)="changeTransit()" />
+      </div>
+      <select [(ngModel)]=duration (ngModelChange)="changeTransit()">
+        <option value="10">10</option>
+        <option value="15">15</option>
       </select>
     </div>
   </div>

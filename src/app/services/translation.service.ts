@@ -28,7 +28,7 @@ export class TranslationService {
     } else {
       this.lang = 'en';
     }
-    translate.addLangs(['en', 'es']);
+    translate.addLangs(['en']);
     translate.setDefaultLang(this.lang);
   }
   getTranslation() {

@@ -19,7 +19,8 @@
     "AUTO": "Automatic",
     "RESOLUTION": "Resolution",
     "EFFDECK": "Effects deck",
-    "EFFECT": "Effect"
+    "EFFECT": "Effect",
+    "AUTO_TRANSIT": "自动切歌"
   },
   "EFFCREATOR": {
     "CREATE": "Create effect",

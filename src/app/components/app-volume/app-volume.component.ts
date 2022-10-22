@@ -18,6 +18,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { PlayerService } from '../../services/player.service';
 import { MusicLoaderService } from '../../services/music-loader.service';
 import { HelpService } from 'src/app/services/help.service';
+import { TransitService } from 'src/app/services/transit.service';
 
 @Component({
   selector: 'app-volume',
@@ -28,10 +29,14 @@ export class AppVolumeComponent implements OnInit, AfterViewInit {
   constructor(
     private musicService: MusicLoaderService,
     private playerService: PlayerService,
+    transitService: TransitService,
     helpService: HelpService
   ) {
     helpService.help$.subscribe(help => {
       this.help = help;
+    });
+    transitService.volumnMaster$.subscribe((v: number) => {
+      this.volumeMaster = v;
     });
   }
   help: any;

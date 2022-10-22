@@ -17,17 +17,24 @@ along with Web Virtual DJ.If not, see < https://www.gnu.org/licenses/>.
 import { Component, OnInit } from '@angular/core';
 import { SizeService } from '../../services/size.service';
 import { TranslationService } from '../../services/translation.service';
+import { TransitService } from 'src/app/services/transit.service';
 @Component({
   selector: 'app-settings',
   templateUrl: './app-settings.component.html',
   styleUrls: ['./app-settings.component.css']
 })
 export class AppSettingsComponent implements OnInit {
-  constructor(private sizeService: SizeService, private translationService: TranslationService) {
+  constructor(
+    private sizeService: SizeService,
+    private translationService: TranslationService,
+    private transitService: TransitService
+    ) {
     this.lang = translationService.getActualLang();
   }
   size = 'auto';
   lang: string;
+  transit = false;
+  duration = 10;
   ngOnInit() {
     if (this.sizeService.getWidth() && this.sizeService.getHeight()) {
       this.size = this.sizeService.getWidth() + 'x' + this.sizeService.getHeight();
@@ -43,5 +50,8 @@ export class AppSettingsComponent implements OnInit {
   }
   changeLang() {
     this.translationService.changeLanguage(this.lang);
+  }
+  changeTransit() {
+    this.transitService.changeTransit(this.transit, this.duration);
   }
 }
