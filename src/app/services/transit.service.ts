@@ -46,7 +46,9 @@ export class TransitService {
     if (transitDuration > this.duration || transitDuration <= 0) return;
     if (!this.playerService.isPlaying(deckNumber)) return;
 
-    if (!this.playerService.isPlaying(nextDeck)) this.playerService.playPause(nextDeck);
+    if (!this.playerService.isPlaying(nextDeck)) {
+      this.playerService.playFromPosition(nextDeck, 0);
+    }
     const maxVol = 100;
     const volProgress = 2 * maxVol / this.duration * (this.duration - transitDuration);
     if (deckNumber === 0) {
@@ -54,6 +56,5 @@ export class TransitService {
     } else {
       this.volumnMaster.next(maxVol - volProgress);
     }
-    console.log("audioprocess", current);
   }
 }

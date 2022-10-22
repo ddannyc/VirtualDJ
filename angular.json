@@ -25,7 +25,8 @@
                 "glob": "**/*",
                 "input": "./node_modules/music-tempo/dist",
                 "output": "./scripts/"
-              }
+              },
+              "src/manifest.webmanifest"
             ],
             "styles": ["src/styles.css"],
             "scripts": ["node_modules/wavesurfer.js/dist/plugin/wavesurfer.cursor.js"],
@@ -39,7 +40,9 @@
               "wavesurfer.js",
               "tunajs",
               "ngx-web-worker"
-            ]
+            ],
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "production": {
@@ -99,7 +102,8 @@
                 "glob": "**/*",
                 "input": "./node_modules/music-tempo/dist",
                 "output": "./scripts/"
-              }
+              },
+              "src/manifest.webmanifest"
             ]
           }
         },
